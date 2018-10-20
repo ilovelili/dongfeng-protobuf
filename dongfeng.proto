@@ -1,0 +1,36 @@
+syntax = "proto3";
+package dongfeng.protobuf;
+
+// ******************************************************* message definition *******************************************************
+message LoginRequest {}
+
+message LoginResponse {
+	string version = 1;
+	User user = 2;	
+	repeated Operation system_broadcasting = 3;
+	repeated Operation user_updates = 4;
+	repeated Operation friend_updates = 5;
+}
+
+message User {
+	bool newuser = 1;
+	string role = 2;
+	string id = 3;
+	string email = 4;
+	string name = 5;	
+	string avatar = 6;
+	repeated Setting settings = 7;
+}
+
+message Setting {
+	int64 id = 1;
+	string name = 2;	
+	bool enabled = 3;
+}
+
+message Operation {
+	string user_id = 1;
+	string time = 2;	
+	string operation = 3;
+	string category = 4;
+}
