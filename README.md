@@ -10,4 +10,4 @@ compiler.sh
 
 ## Contact
 
-min<route666@live.cn>
+<route666@live.cn>
