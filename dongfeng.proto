@@ -6,7 +6,7 @@ message LoginRequest {}
 
 message LoginResponse {
 	string version = 1;
-	User user = 2;	
+	User user = 2;
 	repeated Notification notifications = 3;
 }
 
@@ -15,22 +15,22 @@ message User {
 	string role = 2;
 	string id = 3;
 	string email = 4;
-	string name = 5;	
+	string name = 5;
 	string avatar = 6;
 	repeated Setting settings = 7;
 }
 
 message Setting {
 	int64 id = 1;
-	string name = 2;	
+	string name = 2;
 	bool enabled = 3;
 }
 
 message Notification {	
 	string user_id = 1;
-	string custom_code = 2;	
+	string custom_code = 2;
 	string category = 3;
 	string details = 4;
-	string link = 5;	
-	string time = 6;	
+	string link = 5;
+	string time = 6;
 }
