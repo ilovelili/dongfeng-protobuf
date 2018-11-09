@@ -12,7 +12,7 @@ It has these top-level messages:
 	LoginResponse
 	User
 	Setting
-	Operation
+	Notification
 */
 package dongfeng_protobuf
 

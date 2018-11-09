@@ -7,9 +7,7 @@ message LoginRequest {}
 message LoginResponse {
 	string version = 1;
 	User user = 2;	
-	repeated Operation system_broadcasting = 3;
-	repeated Operation user_updates = 4;
-	repeated Operation friend_updates = 5;
+	repeated Notification notifications = 3;
 }
 
 message User {
@@ -28,9 +26,11 @@ message Setting {
 	bool enabled = 3;
 }
 
-message Operation {
+message Notification {	
 	string user_id = 1;
-	string time = 2;	
-	string operation = 3;
-	string category = 4;
+	string custom_code = 2;	
+	string category = 3;
+	string details = 4;
+	string link = 5;	
+	string time = 6;	
 }
