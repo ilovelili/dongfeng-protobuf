@@ -2,6 +2,8 @@ syntax = "proto3";
 package dongfeng.protobuf;
 
 // ******************************************************* message definition *******************************************************
+
+///////////////////////////////////////////////////
 message LoginRequest {
 	string token = 1;
 }
@@ -12,6 +14,13 @@ message LoginResponse {
 	repeated Notification notifications = 3;
 }
 
+
+///////////////////////////////////////////////////
+message UploadAvatarResponse {
+	string uri = 1;
+}
+
+///////////////////////////////////////////////////
 message User {
 	bool newuser = 1;
 	string role = 2;
@@ -22,12 +31,14 @@ message User {
 	repeated Setting settings = 7;
 }
 
+///////////////////////////////////////////////////
 message Setting {
 	int32 id = 1;
 	string name = 2;
 	bool enabled = 3;
 }
 
+///////////////////////////////////////////////////
 message Notification {
 	int32 id = 1;
 	string user_id = 2;
