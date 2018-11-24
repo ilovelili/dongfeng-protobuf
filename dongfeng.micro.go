@@ -8,6 +8,8 @@ It is generated from these files:
 	github.com/ilovelili/dongfeng-protobuf/dongfeng.proto
 
 It has these top-level messages:
+	DashboardRequest
+	DashboardResponse
 	LoginRequest
 	LoginResponse
 	UploadAvatarResponse

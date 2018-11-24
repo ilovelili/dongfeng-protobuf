@@ -2,6 +2,15 @@ syntax = "proto3";
 package dongfeng.protobuf;
 
 // ******************************************************* message definition *******************************************************
+///////////////////////////////////////////////////
+message DashboardRequest {
+	string token = 1;
+}
+
+message DashboardResponse {
+	string user_id = 1;
+	repeated Notification notifications = 2;
+}
 
 ///////////////////////////////////////////////////
 message LoginRequest {
@@ -9,11 +18,8 @@ message LoginRequest {
 }
 
 message LoginResponse {	
-	string version = 1;
-	User user = 2;	
-	repeated Notification notifications = 3;
+	User user = 1;	
 }
-
 
 ///////////////////////////////////////////////////
 message UploadAvatarResponse {
