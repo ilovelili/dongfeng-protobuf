@@ -16,6 +16,7 @@ It has these top-level messages:
 	User
 	Setting
 	Notification
+	UpdateUserRequest
 */
 package dongfeng_protobuf
 

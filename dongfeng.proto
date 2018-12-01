@@ -54,3 +54,9 @@ message Notification {
 	string link = 6;
 	string time = 7;
 }
+
+///////////////////////////////////////////////////
+message UpdateUserRequest {		
+	string name = 1;
+	string avatar = 2;
+}
