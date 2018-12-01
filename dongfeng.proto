@@ -56,7 +56,9 @@ message Notification {
 }
 
 ///////////////////////////////////////////////////
-message UpdateUserRequest {		
+message UpdateUserRequest {
 	string name = 1;
 	string avatar = 2;
 }
+
+message UpdateUserResponse {}
