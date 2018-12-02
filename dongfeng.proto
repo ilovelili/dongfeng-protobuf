@@ -1,6 +1,8 @@
 syntax = "proto3";
 package dongfeng.protobuf;
 
+import "github.com/golang/protobuf/ptypes/timestamp/timestamp.proto";
+
 // ******************************************************* message definition *******************************************************
 ///////////////////////////////////////////////////
 message DashboardRequest {
@@ -52,13 +54,14 @@ message Notification {
 	string category = 4;
 	string details = 5;
 	string link = 6;
-	string time = 7;
+	google.protobuf.Timestamp time = 7;
 }
 
 ///////////////////////////////////////////////////
 message UpdateUserRequest {
-	string name = 1;
-	string avatar = 2;
+	string token = 1;
+	string name = 2;
+	string avatar = 3;
 }
 
 message UpdateUserResponse {}
