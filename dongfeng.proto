@@ -64,3 +64,18 @@ message UpdateUserRequest {
 }
 
 message UpdateUserResponse {}
+
+///////////////////////////////////////////////////
+message AttendenceRequest {
+	repeated ClassAttendence attendences = 1;
+}
+
+message ClassAttendence {
+	int32 year = 1;
+	int32 month = 2;
+	string class = 3;
+	string name = 4;
+	repeated int32 attendences = 5;
+}
+
+message AttendenceResponse {}
