@@ -5,7 +5,7 @@ echo "fetching public packages ..."
 if ! [ -x "$(command -v protoc)" ]; then
     echo "Downloading protoc ..."
     curl -OL https://github.com/google/protobuf/releases/download/v3.6.1/protoc-3.6.1-linux-x86_64.zip
-    unzip protoc-3.6.1-linux-x86_64.zip -d protoc3      
+    unzip protoc-3.6.1-linux-x86_64.zip -d protoc3
     sudo mv ./protoc3/bin/* /usr/bin/
     sudo mv ./protoc3/include/* /usr/include
     # clean up
