@@ -547,146 +547,146 @@ func (m *UpdateUserResponse) XXX_DiscardUnknown() {
 var xxx_messageInfo_UpdateUserResponse proto.InternalMessageInfo
 
 ///////////////////////////////////////////////////
-type AttendenceRequest struct {
-	Attendences          []*ClassAttendence `protobuf:"bytes,1,rep,name=attendences,proto3" json:"attendences"`
+type AttendanceRequest struct {
+	Attendances          []*ClassAttendance `protobuf:"bytes,1,rep,name=attendances,proto3" json:"attendances"`
 	XXX_NoUnkeyedLiteral struct{}           `json:"-"`
 	XXX_unrecognized     []byte             `json:"-"`
 	XXX_sizecache        int32              `json:"-"`
 }
 
-func (m *AttendenceRequest) Reset()         { *m = AttendenceRequest{} }
-func (m *AttendenceRequest) String() string { return proto.CompactTextString(m) }
-func (*AttendenceRequest) ProtoMessage()    {}
-func (*AttendenceRequest) Descriptor() ([]byte, []int) {
+func (m *AttendanceRequest) Reset()         { *m = AttendanceRequest{} }
+func (m *AttendanceRequest) String() string { return proto.CompactTextString(m) }
+func (*AttendanceRequest) ProtoMessage()    {}
+func (*AttendanceRequest) Descriptor() ([]byte, []int) {
 	return fileDescriptor_25d37d3dc0bc109b, []int{10}
 }
 
-func (m *AttendenceRequest) XXX_Unmarshal(b []byte) error {
-	return xxx_messageInfo_AttendenceRequest.Unmarshal(m, b)
+func (m *AttendanceRequest) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_AttendanceRequest.Unmarshal(m, b)
 }
-func (m *AttendenceRequest) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	return xxx_messageInfo_AttendenceRequest.Marshal(b, m, deterministic)
+func (m *AttendanceRequest) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_AttendanceRequest.Marshal(b, m, deterministic)
 }
-func (m *AttendenceRequest) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_AttendenceRequest.Merge(m, src)
+func (m *AttendanceRequest) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_AttendanceRequest.Merge(m, src)
 }
-func (m *AttendenceRequest) XXX_Size() int {
-	return xxx_messageInfo_AttendenceRequest.Size(m)
+func (m *AttendanceRequest) XXX_Size() int {
+	return xxx_messageInfo_AttendanceRequest.Size(m)
 }
-func (m *AttendenceRequest) XXX_DiscardUnknown() {
-	xxx_messageInfo_AttendenceRequest.DiscardUnknown(m)
+func (m *AttendanceRequest) XXX_DiscardUnknown() {
+	xxx_messageInfo_AttendanceRequest.DiscardUnknown(m)
 }
 
-var xxx_messageInfo_AttendenceRequest proto.InternalMessageInfo
+var xxx_messageInfo_AttendanceRequest proto.InternalMessageInfo
 
-func (m *AttendenceRequest) GetAttendences() []*ClassAttendence {
+func (m *AttendanceRequest) GetAttendances() []*ClassAttendance {
 	if m != nil {
-		return m.Attendences
+		return m.Attendances
 	}
 	return nil
 }
 
-type ClassAttendence struct {
+type ClassAttendance struct {
 	Year                 int32    `protobuf:"varint,1,opt,name=year,proto3" json:"year"`
 	Month                int32    `protobuf:"varint,2,opt,name=month,proto3" json:"month"`
 	Class                string   `protobuf:"bytes,3,opt,name=class,proto3" json:"class"`
 	Name                 string   `protobuf:"bytes,4,opt,name=name,proto3" json:"name"`
-	Attendences          []int32  `protobuf:"varint,5,rep,packed,name=attendences,proto3" json:"attendences"`
+	Attendances          []int32  `protobuf:"varint,5,rep,packed,name=attendances,proto3" json:"attendances"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
 }
 
-func (m *ClassAttendence) Reset()         { *m = ClassAttendence{} }
-func (m *ClassAttendence) String() string { return proto.CompactTextString(m) }
-func (*ClassAttendence) ProtoMessage()    {}
-func (*ClassAttendence) Descriptor() ([]byte, []int) {
+func (m *ClassAttendance) Reset()         { *m = ClassAttendance{} }
+func (m *ClassAttendance) String() string { return proto.CompactTextString(m) }
+func (*ClassAttendance) ProtoMessage()    {}
+func (*ClassAttendance) Descriptor() ([]byte, []int) {
 	return fileDescriptor_25d37d3dc0bc109b, []int{11}
 }
 
-func (m *ClassAttendence) XXX_Unmarshal(b []byte) error {
-	return xxx_messageInfo_ClassAttendence.Unmarshal(m, b)
+func (m *ClassAttendance) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_ClassAttendance.Unmarshal(m, b)
 }
-func (m *ClassAttendence) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	return xxx_messageInfo_ClassAttendence.Marshal(b, m, deterministic)
+func (m *ClassAttendance) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_ClassAttendance.Marshal(b, m, deterministic)
 }
-func (m *ClassAttendence) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_ClassAttendence.Merge(m, src)
+func (m *ClassAttendance) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_ClassAttendance.Merge(m, src)
 }
-func (m *ClassAttendence) XXX_Size() int {
-	return xxx_messageInfo_ClassAttendence.Size(m)
+func (m *ClassAttendance) XXX_Size() int {
+	return xxx_messageInfo_ClassAttendance.Size(m)
 }
-func (m *ClassAttendence) XXX_DiscardUnknown() {
-	xxx_messageInfo_ClassAttendence.DiscardUnknown(m)
+func (m *ClassAttendance) XXX_DiscardUnknown() {
+	xxx_messageInfo_ClassAttendance.DiscardUnknown(m)
 }
 
-var xxx_messageInfo_ClassAttendence proto.InternalMessageInfo
+var xxx_messageInfo_ClassAttendance proto.InternalMessageInfo
 
-func (m *ClassAttendence) GetYear() int32 {
+func (m *ClassAttendance) GetYear() int32 {
 	if m != nil {
 		return m.Year
 	}
 	return 0
 }
 
-func (m *ClassAttendence) GetMonth() int32 {
+func (m *ClassAttendance) GetMonth() int32 {
 	if m != nil {
 		return m.Month
 	}
 	return 0
 }
 
-func (m *ClassAttendence) GetClass() string {
+func (m *ClassAttendance) GetClass() string {
 	if m != nil {
 		return m.Class
 	}
 	return ""
 }
 
-func (m *ClassAttendence) GetName() string {
+func (m *ClassAttendance) GetName() string {
 	if m != nil {
 		return m.Name
 	}
 	return ""
 }
 
-func (m *ClassAttendence) GetAttendences() []int32 {
+func (m *ClassAttendance) GetAttendances() []int32 {
 	if m != nil {
-		return m.Attendences
+		return m.Attendances
 	}
 	return nil
 }
 
-type AttendenceResponse struct {
+type AttendanceResponse struct {
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
 }
 
-func (m *AttendenceResponse) Reset()         { *m = AttendenceResponse{} }
-func (m *AttendenceResponse) String() string { return proto.CompactTextString(m) }
-func (*AttendenceResponse) ProtoMessage()    {}
-func (*AttendenceResponse) Descriptor() ([]byte, []int) {
+func (m *AttendanceResponse) Reset()         { *m = AttendanceResponse{} }
+func (m *AttendanceResponse) String() string { return proto.CompactTextString(m) }
+func (*AttendanceResponse) ProtoMessage()    {}
+func (*AttendanceResponse) Descriptor() ([]byte, []int) {
 	return fileDescriptor_25d37d3dc0bc109b, []int{12}
 }
 
-func (m *AttendenceResponse) XXX_Unmarshal(b []byte) error {
-	return xxx_messageInfo_AttendenceResponse.Unmarshal(m, b)
+func (m *AttendanceResponse) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_AttendanceResponse.Unmarshal(m, b)
 }
-func (m *AttendenceResponse) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	return xxx_messageInfo_AttendenceResponse.Marshal(b, m, deterministic)
+func (m *AttendanceResponse) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_AttendanceResponse.Marshal(b, m, deterministic)
 }
-func (m *AttendenceResponse) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_AttendenceResponse.Merge(m, src)
+func (m *AttendanceResponse) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_AttendanceResponse.Merge(m, src)
 }
-func (m *AttendenceResponse) XXX_Size() int {
-	return xxx_messageInfo_AttendenceResponse.Size(m)
+func (m *AttendanceResponse) XXX_Size() int {
+	return xxx_messageInfo_AttendanceResponse.Size(m)
 }
-func (m *AttendenceResponse) XXX_DiscardUnknown() {
-	xxx_messageInfo_AttendenceResponse.DiscardUnknown(m)
+func (m *AttendanceResponse) XXX_DiscardUnknown() {
+	xxx_messageInfo_AttendanceResponse.DiscardUnknown(m)
 }
 
-var xxx_messageInfo_AttendenceResponse proto.InternalMessageInfo
+var xxx_messageInfo_AttendanceResponse proto.InternalMessageInfo
 
 func init() {
 	proto.RegisterType((*DashboardRequest)(nil), "dongfeng.protobuf.DashboardRequest")
@@ -699,9 +699,9 @@ func init() {
 	proto.RegisterType((*Notification)(nil), "dongfeng.protobuf.Notification")
 	proto.RegisterType((*UpdateUserRequest)(nil), "dongfeng.protobuf.UpdateUserRequest")
 	proto.RegisterType((*UpdateUserResponse)(nil), "dongfeng.protobuf.UpdateUserResponse")
-	proto.RegisterType((*AttendenceRequest)(nil), "dongfeng.protobuf.AttendenceRequest")
-	proto.RegisterType((*ClassAttendence)(nil), "dongfeng.protobuf.ClassAttendence")
-	proto.RegisterType((*AttendenceResponse)(nil), "dongfeng.protobuf.AttendenceResponse")
+	proto.RegisterType((*AttendanceRequest)(nil), "dongfeng.protobuf.AttendanceRequest")
+	proto.RegisterType((*ClassAttendance)(nil), "dongfeng.protobuf.ClassAttendance")
+	proto.RegisterType((*AttendanceResponse)(nil), "dongfeng.protobuf.AttendanceResponse")
 }
 
 func init() {
@@ -738,11 +738,11 @@ var fileDescriptor_25d37d3dc0bc109b = []byte{
 	0x81, 0x96, 0xcb, 0xc2, 0xc4, 0x35, 0xed, 0xa0, 0xb3, 0x5f, 0x48, 0x75, 0x17, 0xf7, 0xe4, 0x6b,
 	0xc7, 0x59, 0x59, 0x22, 0x1d, 0x05, 0xce, 0xd5, 0x6c, 0x05, 0xd3, 0xd5, 0x56, 0x70, 0x8b, 0xfe,
 	0x03, 0x3c, 0xf5, 0xab, 0x0e, 0x6e, 0xe4, 0xdf, 0x41, 0x7a, 0xed, 0x83, 0xb0, 0x19, 0x90, 0xf6,
-	0xb3, 0xe1, 0x07, 0xb1, 0xef, 0x30, 0xbd, 0xb2, 0x16, 0x95, 0x40, 0x95, 0xe1, 0x6e, 0xd8, 0x0d,
-	0x4c, 0x78, 0x43, 0x1a, 0xda, 0xf1, 0xe7, 0x63, 0x07, 0xce, 0x77, 0x5d, 0x70, 0x63, 0x5a, 0xfd,
-	0xed, 0x36, 0xf6, 0xab, 0x03, 0x2f, 0xfe, 0x13, 0x38, 0xc3, 0x0f, 0xc8, 0xab, 0x78, 0x05, 0x5f,
-	0xbb, 0x68, 0xa5, 0x56, 0x76, 0xe3, 0x53, 0x0c, 0x92, 0x00, 0x1c, 0x9b, 0xb9, 0xe6, 0x98, 0x22,
-	0x80, 0x26, 0x70, 0xbf, 0x15, 0x78, 0xbe, 0xef, 0x76, 0x30, 0xef, 0x2d, 0x06, 0xfb, 0x4e, 0x66,
-	0x40, 0xda, 0x21, 0x43, 0xf4, 0x74, 0xe8, 0x63, 0xbc, 0xfd, 0x1b, 0x00, 0x00, 0xff, 0xff, 0x95,
-	0xf7, 0x01, 0x29, 0xaa, 0x04, 0x00, 0x00,
+	0xb3, 0xe1, 0x07, 0xb1, 0xef, 0x30, 0xbd, 0xb2, 0x16, 0x95, 0xe0, 0x2a, 0xc3, 0xdd, 0xb0, 0x1b,
+	0x98, 0xf0, 0x86, 0x34, 0xb4, 0xe3, 0xcf, 0xc7, 0x0e, 0x9c, 0xef, 0xba, 0xe0, 0xc6, 0xb4, 0xfa,
+	0xdb, 0x6d, 0xec, 0x57, 0x07, 0x5e, 0xfc, 0x27, 0x70, 0x86, 0x1f, 0x90, 0x57, 0xf1, 0x0a, 0xbe,
+	0x76, 0xd1, 0x4a, 0xad, 0xec, 0xc6, 0xa7, 0x18, 0x24, 0x01, 0x38, 0x36, 0x73, 0xcd, 0x31, 0x45,
+	0x00, 0x4d, 0xe0, 0x7e, 0x2b, 0xf0, 0x7c, 0xdf, 0xed, 0x60, 0xde, 0x5b, 0x0c, 0xf6, 0x9d, 0xcc,
+	0x80, 0xb4, 0x43, 0x86, 0xe8, 0xe9, 0xd0, 0xc7, 0x78, 0xfb, 0x37, 0x00, 0x00, 0xff, 0xff, 0xd3,
+	0x27, 0xb7, 0xda, 0xaa, 0x04, 0x00, 0x00,
 }

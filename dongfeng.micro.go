@@ -18,9 +18,9 @@ It has these top-level messages:
 	Notification
 	UpdateUserRequest
 	UpdateUserResponse
-	AttendenceRequest
-	ClassAttendence
-	AttendenceResponse
+	AttendanceRequest
+	ClassAttendance
+	AttendanceResponse
 */
 package dongfeng_protobuf
 
