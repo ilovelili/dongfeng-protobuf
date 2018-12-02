@@ -1,7 +1,6 @@
 syntax = "proto3";
 
 package dongfeng.protobuf;
-import "github.com/golang/protobuf/ptypes/timestamp/timestamp.proto";
 
 // ******************************************************* message definition *******************************************************
 ///////////////////////////////////////////////////
@@ -54,7 +53,7 @@ message Notification {
 	string category = 4;
 	string details = 5;
 	string link = 6;
-	google.protobuf.Timestamp time = 7;
+	string time = 7;
 }
 
 ///////////////////////////////////////////////////
