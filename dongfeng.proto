@@ -73,11 +73,10 @@ message AttendanceRequest {
 
 message ClassAttendance {
 	int32 year = 1;
-	int32 month = 2;
-	int32 day = 3;
-	string class = 4;
-	string name = 5;
-	repeated int32 attendances = 6;
+	int32 month = 2;	
+	string class = 3;
+	string name = 4;
+	repeated int32 attendances = 5;
 }
 
 message AttendanceResponse {}
