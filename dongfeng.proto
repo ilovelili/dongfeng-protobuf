@@ -100,3 +100,30 @@ message Attendance {
 	string class = 3;
 	string name = 4;
 }
+
+///////////////////////////////////////////////////
+message UpdatePhysiqueRequest {
+	string token = 1;	
+	repeated Physique physiques = 3;
+}
+
+message Physique {
+	string class = 1;
+	repeated PhysiqueItem items = 2;
+}
+
+message PhysiqueItem {
+	string name = 1;
+	enum Gender {
+		M = 0;
+		F = 1;
+	}
+	Gender gender = 2;
+	string birth_date = 3;
+	string exam_date = 4;
+	float height = 5;
+	float weight = 6;
+}
+
+message UpdatePhysiqueResponse {
+}

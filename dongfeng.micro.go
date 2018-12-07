@@ -24,6 +24,10 @@ It has these top-level messages:
 	GetAttendanceRequest
 	GetAttendanceResponse
 	Attendance
+	UpdatePhysiqueRequest
+	Physique
+	PhysiqueItem
+	UpdatePhysiqueResponse
 */
 package dongfeng_protobuf
 
