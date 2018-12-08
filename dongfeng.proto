@@ -127,3 +127,16 @@ message PhysiqueItem {
 
 message UpdatePhysiqueResponse {
 }
+
+///////////////////////////////////////////////////
+message GetPhysiqueRequest {
+	string token = 1;	
+	string from = 2;
+	string to = 3;
+	string class = 4;
+	string name = 5;
+}
+
+message GetPhysiqueResponse {
+	// TBD
+}

@@ -28,6 +28,8 @@ It has these top-level messages:
 	Physique
 	PhysiqueItem
 	UpdatePhysiqueResponse
+	GetPhysiqueRequest
+	GetPhysiqueResponse
 */
 package dongfeng_protobuf
 
