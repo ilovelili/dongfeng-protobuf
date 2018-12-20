@@ -19,6 +19,7 @@ It has these top-level messages:
 	UpdateUserRequest
 	UpdateUserResponse
 	UpdateNamelistRequest
+	NamelistItem
 	UpdateNamelistResponse
 	UpdateAttendanceRequest
 	ClassAttendance

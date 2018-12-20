@@ -68,9 +68,13 @@ message UpdateUserResponse {}
 ///////////////////////////////////////////////////
 message UpdateNamelistRequest {
 	string token = 1;
-	string year = 2;
-	string class = 3;
-	repeated string names = 4;
+	repeated NamelistItem items = 2;	
+}
+
+message NamelistItem {
+	string year = 1;
+	string class = 2;
+	repeated string names = 3;
 }
 
 message UpdateNamelistResponse {}
