@@ -76,19 +76,11 @@ message GetNamelistResponse {
 	repeated NamelistItem items = 1;
 }
 
-///////////////////////////////////////////////////
-message UpdateNamelistRequest {
-	string token = 1;
-	repeated NamelistItem items = 2;
-}
-
 message NamelistItem {
 	string year = 1;
 	string class = 2;
 	repeated string names = 3;
 }
-
-message UpdateNamelistResponse {}
 
 ///////////////////////////////////////////////////
 message UpdateAttendanceRequest {
