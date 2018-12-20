@@ -66,13 +66,14 @@ message UpdateUserRequest {
 message UpdateUserResponse {}
 
 ///////////////////////////////////////////////////
-message UpdateClassNamelistRequest {
+message UpdateNamelistRequest {
 	string token = 1;
-	string class = 2;
-	repeated string names = 3;
+	string year = 2;
+	string class = 3;
+	repeated string names = 4;
 }
 
-message UpdateClassNamelistResponse {}
+message UpdateNamelistResponse {}
 
 ///////////////////////////////////////////////////
 message UpdateAttendanceRequest {
