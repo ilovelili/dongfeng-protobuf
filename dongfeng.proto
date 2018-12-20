@@ -66,9 +66,20 @@ message UpdateUserRequest {
 message UpdateUserResponse {}
 
 ///////////////////////////////////////////////////
+message GetNamelistRequest {
+	string token = 1;
+	string year = 2;
+	string class = 3;	
+}
+
+message GetNamelistResponse {
+	repeated NamelistItem items = 1;
+}
+
+///////////////////////////////////////////////////
 message UpdateNamelistRequest {
 	string token = 1;
-	repeated NamelistItem items = 2;	
+	repeated NamelistItem items = 2;
 }
 
 message NamelistItem {
