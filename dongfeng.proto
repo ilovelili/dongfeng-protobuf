@@ -66,6 +66,15 @@ message UpdateUserRequest {
 message UpdateUserResponse {}
 
 ///////////////////////////////////////////////////
+message UpdateClassNamelistRequest {
+	string token = 1;
+	string class = 2;
+	repeated string names = 3;
+}
+
+message UpdateClassNamelistResponse {}
+
+///////////////////////////////////////////////////
 message UpdateAttendanceRequest {
 	string token = 1;
 	repeated ClassAttendance attendances = 2;
@@ -98,7 +107,8 @@ message Attendance {
 	int64 id  = 1;
 	string date = 2;
 	string class = 3;
-	string name = 4;
+	int64 count = 4;
+	repeated string name = 5;
 }
 
 ///////////////////////////////////////////////////

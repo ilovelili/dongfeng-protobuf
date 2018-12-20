@@ -18,6 +18,8 @@ It has these top-level messages:
 	Notification
 	UpdateUserRequest
 	UpdateUserResponse
+	UpdateClassNamelistRequest
+	UpdateClassNamelistResponse
 	UpdateAttendanceRequest
 	ClassAttendance
 	UpdateAttendanceResponse
