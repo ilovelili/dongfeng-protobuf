@@ -158,3 +158,12 @@ message GetPhysiqueRequest {
 message GetPhysiqueResponse {
 	// TBD
 }
+
+///////////////////////////////////////////////////
+message UpdateRecipeRequest {
+	string recipe = 1;
+	repeated string ingredients = 2;
+}
+
+message UpdateRecipeResponse {
+}
