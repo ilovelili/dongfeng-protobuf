@@ -34,6 +34,7 @@ It has these top-level messages:
 	GetPhysiqueRequest
 	GetPhysiqueResponse
 	UpdateRecipeRequest
+	Recipe
 	UpdateRecipeResponse
 */
 package dongfeng_protobuf
