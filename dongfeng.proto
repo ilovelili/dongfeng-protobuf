@@ -51,9 +51,10 @@ message Notification {
 	string user_id = 2;
 	string custom_code = 3;
 	string category = 4;
-	string details = 5;
-	string link = 6;
-	string time = 7;
+	int64 category_id = 5;
+	string details = 6;
+	string link = 7;
+	string time = 8;
 }
 
 ///////////////////////////////////////////////////
