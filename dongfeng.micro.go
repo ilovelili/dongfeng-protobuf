@@ -36,6 +36,8 @@ It has these top-level messages:
 	UpdateRecipeRequest
 	Recipe
 	UpdateRecipeResponse
+	SaveNotificationRequest
+	SaveNotificationResponse
 */
 package dongfeng_protobuf
 

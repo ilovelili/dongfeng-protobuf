@@ -40,14 +40,14 @@ message User {
 
 ///////////////////////////////////////////////////
 message Setting {
-	int32 id = 1;
+	int64 id = 1;
 	string name = 2;
 	bool enabled = 3;
 }
 
 ///////////////////////////////////////////////////
 message Notification {
-	int32 id = 1;
+	int64 id = 1;
 	string user_id = 2;
 	string custom_code = 3;
 	string category = 4;
@@ -89,11 +89,11 @@ message UpdateAttendanceRequest {
 }
 
 message ClassAttendance {
-	int32 year = 1;
-	int32 month = 2;	
+	int64 year = 1;
+	int64 month = 2;	
 	string class = 3;
 	string name = 4;
-	repeated int32 attendances = 5;
+	repeated int64 attendances = 5;
 }
 
 message UpdateAttendanceResponse {}
@@ -171,4 +171,12 @@ message Recipe {
 }
 
 message UpdateRecipeResponse {
+}
+
+///////////////////////////////////////////////////
+message SaveNotificationRequest {
+	Notification notification = 1;
+}
+
+message SaveNotificationResponse {	
 }
