@@ -121,6 +121,24 @@ message Attendance {
 }
 
 ///////////////////////////////////////////////////
+message GetAttendanceCountRequest {	
+	string from = 1;
+	string to = 2;
+	string class = 3;
+}
+
+message GetAttendanceCountResponse {
+	int64 sum = 1;
+	repeated AttendanceCount attendance_counts = 2;
+}
+
+message AttendanceCount {
+	string date = 1;
+	string class = 2;
+	int64 count = 3;
+}
+
+///////////////////////////////////////////////////
 message UpdatePhysiqueRequest {
 	string token = 1;	
 	repeated Physique physiques = 3;

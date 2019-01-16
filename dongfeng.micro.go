@@ -27,6 +27,9 @@ It has these top-level messages:
 	GetAttendanceRequest
 	GetAttendanceResponse
 	Attendance
+	GetAttendanceCountRequest
+	GetAttendanceCountResponse
+	AttendanceCount
 	UpdatePhysiqueRequest
 	Physique
 	PhysiqueItem
