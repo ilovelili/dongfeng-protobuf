@@ -39,6 +39,9 @@ It has these top-level messages:
 	UpdateRecipeRequest
 	Recipe
 	UpdateRecipeResponse
+	UpdateMenuRequest
+	Menu
+	UpdateMenuResponse
 	SaveNotificationRequest
 	SaveNotificationResponse
 */

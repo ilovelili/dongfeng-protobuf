@@ -193,6 +193,22 @@ message UpdateRecipeResponse {
 }
 
 ///////////////////////////////////////////////////
+message UpdateMenuRequest {	
+	repeated Menu menus = 1;
+}
+
+message Menu {
+	string date = 1;
+	string recipe = 2;
+	int64 breakfast_or_lunch = 3;
+	int64 junior_or_senior = 4;	
+}
+
+message UpdateMenuResponse {
+	
+}
+
+///////////////////////////////////////////////////
 message SaveNotificationRequest {
 	Notification notification = 1;
 }
