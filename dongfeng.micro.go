@@ -12,9 +12,11 @@ It has these top-level messages:
 	DashboardResponse
 	LoginRequest
 	LoginResponse
-	UploadAvatarResponse
 	User
+	UploadAvatarResponse
 	Setting
+	SaveNotificationRequest
+	SaveNotificationResponse
 	Notification
 	UpdateUserRequest
 	UpdateUserResponse
@@ -22,32 +24,37 @@ It has these top-level messages:
 	GetNamelistResponse
 	NamelistItem
 	UpdateAttendanceRequest
-	ClassAttendance
 	UpdateAttendanceResponse
+	ClassAttendance
 	GetAttendanceRequest
 	GetAttendanceResponse
 	Attendance
 	GetAttendanceCountRequest
 	GetAttendanceCountResponse
 	AttendanceCount
-	UpdatePhysiqueRequest
-	Physique
-	PhysiqueItem
-	UpdatePhysiqueResponse
-	GetPhysiqueRequest
-	GetPhysiqueResponse
+	GetIngredientRequest
+	GetIngredientResponse
+	UpdateIngredientRequest
+	UpdateIngredientResponse
+	Ingredient
+	IngredientNutrition
 	GetRecipeRequest
 	GetRecipeResponse
 	UpdateRecipeRequest
-	Recipe
 	UpdateRecipeResponse
+	Recipe
+	RecipeNutrition
 	GetMenuRequest
 	GetMenuResponse
 	UpdateMenuRequest
-	Menu
 	UpdateMenuResponse
-	SaveNotificationRequest
-	SaveNotificationResponse
+	Menu
+	UpdatePhysiqueRequest
+	UpdatePhysiqueResponse
+	Physique
+	PhysiqueItem
+	GetPhysiqueRequest
+	GetPhysiqueResponse
 */
 package dongfeng_protobuf
 

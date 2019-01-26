@@ -2,7 +2,8 @@ syntax = "proto3";
 
 package dongfeng.protobuf;
 
-// ******************************************************* message definition *******************************************************
+// ******************************************************* core message definition *******************************************************
+
 ///////////////////////////////////////////////////
 message DashboardRequest {
 	string token = 1;
@@ -22,12 +23,6 @@ message LoginResponse {
 	User user = 1;	
 }
 
-///////////////////////////////////////////////////
-message UploadAvatarResponse {
-	string uri = 1;
-}
-
-///////////////////////////////////////////////////
 message User {
 	bool newuser = 1;
 	string role = 2;
@@ -39,6 +34,11 @@ message User {
 }
 
 ///////////////////////////////////////////////////
+message UploadAvatarResponse {
+	string uri = 1;
+}
+
+///////////////////////////////////////////////////
 message Setting {
 	int64 id = 1;
 	string name = 2;
@@ -46,6 +46,13 @@ message Setting {
 }
 
 ///////////////////////////////////////////////////
+message SaveNotificationRequest {
+	Notification notification = 1;
+}
+
+message SaveNotificationResponse {	
+}
+
 message Notification {
 	int64 id = 1;
 	string user_id = 2;
@@ -66,6 +73,7 @@ message UpdateUserRequest {
 
 message UpdateUserResponse {}
 
+// ******************************************************* attendance message definition *******************************************************
 ///////////////////////////////////////////////////
 message GetNamelistRequest {
 	string token = 1;
@@ -89,6 +97,8 @@ message UpdateAttendanceRequest {
 	repeated ClassAttendance attendances = 2;
 }
 
+message UpdateAttendanceResponse {}
+
 message ClassAttendance {
 	int64 year = 1;
 	int64 month = 2;	
@@ -96,8 +106,6 @@ message ClassAttendance {
 	string name = 4;
 	repeated int64 attendances = 5;
 }
-
-message UpdateAttendanceResponse {}
 
 ///////////////////////////////////////////////////
 message GetAttendanceRequest {
@@ -138,10 +146,120 @@ message AttendanceCount {
 	int64 count = 3;
 }
 
+// ******************************************************* nutrition message definition *******************************************************
+///////////////////////////////////////////////////
+message GetIngredientRequest {
+	string token = 1;
+	string ingredient = 2;
+}
+
+message GetIngredientResponse {	
+	repeated Ingredient ingredients = 1;
+}
+
+message UpdateIngredientRequest {	
+	string token = 1;
+	repeated Ingredient ingredients = 2;	
+}
+
+message UpdateIngredientResponse {
+}
+
+message Ingredient {
+	string ingredient = 1;
+	IngredientNutrition nutrition = 2;
+}
+
+message IngredientNutrition {
+	double protein_100g = 1;
+	double protein_daily = 2;
+	double fat_100g = 3;
+	double fat_daily = 4;
+	double carbohydrate_100g = 5;
+	double carbohydrate_daily = 6;
+	double heat_100g = 7;
+	double heat_daily = 8;
+	double calcium_100g = 9;
+	double calcium_daily = 10;	
+	double iron_100g = 11;
+	double iron_daily = 12;
+	double zinc_100g = 13;
+	double zinc_daily = 14;
+	double va_100g = 15;
+	double va_daily = 16;
+	double vb1_100g = 17;
+	double vb1_daily = 18;
+	double vb2_100g = 19;
+	double vb2_daily = 20;
+	double vc_100g = 21;
+	double vc_daily = 22;
+}
+
+///////////////////////////////////////////////////
+message GetRecipeRequest {	
+	string token = 1;
+	string recipe = 2;
+}
+
+message GetRecipeResponse {	
+	repeated Recipe recipes = 1;
+}
+
+message UpdateRecipeRequest {	
+	string token = 1;
+	repeated Recipe recipes = 2;
+}
+
+message UpdateRecipeResponse {
+}
+
+message Recipe {
+	string recipe = 1;
+	repeated string ingredients = 2;
+	RecipeNutrition nutrition = 3;
+}
+
+message RecipeNutrition {
+	double carbohydrate = 1;
+	double dietaryfiber = 2;
+	double protein = 3;
+	double fat = 4;
+	double heat = 5;
+}
+
+///////////////////////////////////////////////////
+message GetMenuRequest {	
+	string token = 1;
+	string from = 2;
+	string to = 3;
+}
+
+message GetMenuResponse {
+	repeated Menu menu = 1;
+}
+
+message UpdateMenuRequest {	
+	repeated Menu menus = 1;
+}
+
+message UpdateMenuResponse {	
+}
+
+message Menu {
+	string date = 1;
+	string recipe = 2;
+	int64 breakfast_or_lunch = 3;
+	int64 junior_or_senior = 4;	
+}
+
+// ******************************************************* physique message definition *******************************************************
 ///////////////////////////////////////////////////
 message UpdatePhysiqueRequest {
 	string token = 1;	
 	repeated Physique physiques = 3;
+}
+
+message UpdatePhysiqueResponse {
 }
 
 message Physique {
@@ -162,9 +280,6 @@ message PhysiqueItem {
 	float weight = 6;
 }
 
-message UpdatePhysiqueResponse {
-}
-
 ///////////////////////////////////////////////////
 message GetPhysiqueRequest {
 	string token = 1;	
@@ -176,62 +291,4 @@ message GetPhysiqueRequest {
 
 message GetPhysiqueResponse {
 	// TBD
-}
-
-///////////////////////////////////////////////////
-message GetRecipeRequest {	
-	string token = 1;
-	string recipe = 2;
-}
-
-message GetRecipeResponse {	
-	repeated Recipe recipes = 1;
-}
-
-///////////////////////////////////////////////////
-message UpdateRecipeRequest {	
-	string token = 1;
-	repeated Recipe recipes = 2;	
-}
-
-message Recipe {
-	string recipe = 1;
-	repeated string ingredients = 2;
-}
-
-message UpdateRecipeResponse {
-}
-
-///////////////////////////////////////////////////
-message GetMenuRequest {	
-	string token = 1;
-	string from = 2;
-	string to = 3;
-}
-
-message GetMenuResponse {
-	repeated Menu menu = 1;
-}
-
-///////////////////////////////////////////////////
-message UpdateMenuRequest {	
-	repeated Menu menus = 1;
-}
-
-message Menu {
-	string date = 1;
-	string recipe = 2;
-	int64 breakfast_or_lunch = 3;
-	int64 junior_or_senior = 4;	
-}
-
-message UpdateMenuResponse {	
-}
-
-///////////////////////////////////////////////////
-message SaveNotificationRequest {
-	Notification notification = 1;
-}
-
-message SaveNotificationResponse {	
 }
