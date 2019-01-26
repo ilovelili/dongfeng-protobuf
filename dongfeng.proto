@@ -179,6 +179,16 @@ message GetPhysiqueResponse {
 }
 
 ///////////////////////////////////////////////////
+message GetRecipeRequest {	
+	string token = 1;
+	string recipe = 2;
+}
+
+message GetRecipeResponse {	
+	Recipe recipe = 1;
+}
+
+///////////////////////////////////////////////////
 message UpdateRecipeRequest {	
 	string token = 1;
 	repeated Recipe recipes = 2;	

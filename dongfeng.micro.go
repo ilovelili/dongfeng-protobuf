@@ -36,6 +36,8 @@ It has these top-level messages:
 	UpdatePhysiqueResponse
 	GetPhysiqueRequest
 	GetPhysiqueResponse
+	GetRecipeRequest
+	GetRecipeResponse
 	UpdateRecipeRequest
 	Recipe
 	UpdateRecipeResponse
