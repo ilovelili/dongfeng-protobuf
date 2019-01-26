@@ -41,6 +41,8 @@ It has these top-level messages:
 	UpdateRecipeRequest
 	Recipe
 	UpdateRecipeResponse
+	GetMenuRequest
+	GetMenuResponse
 	UpdateMenuRequest
 	Menu
 	UpdateMenuResponse

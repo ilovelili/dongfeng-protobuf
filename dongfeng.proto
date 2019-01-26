@@ -203,6 +203,17 @@ message UpdateRecipeResponse {
 }
 
 ///////////////////////////////////////////////////
+message GetMenuRequest {	
+	string token = 1;
+	string from = 2;
+	string to = 3;
+}
+
+message GetMenuResponse {
+	repeated Menu menu = 1;
+}
+
+///////////////////////////////////////////////////
 message UpdateMenuRequest {	
 	repeated Menu menus = 1;
 }
@@ -214,8 +225,7 @@ message Menu {
 	int64 junior_or_senior = 4;	
 }
 
-message UpdateMenuResponse {
-	
+message UpdateMenuResponse {	
 }
 
 ///////////////////////////////////////////////////
