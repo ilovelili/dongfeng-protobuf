@@ -185,7 +185,7 @@ message GetRecipeRequest {
 }
 
 message GetRecipeResponse {	
-	Recipe recipe = 1;
+	repeated Recipe recipes = 1;
 }
 
 ///////////////////////////////////////////////////
