@@ -43,6 +43,7 @@ It has these top-level messages:
 	UpdateRecipeRequest
 	UpdateRecipeResponse
 	Recipe
+	IngredientUnitAmount
 	RecipeNutrition
 	GetMenuRequest
 	GetMenuResponse

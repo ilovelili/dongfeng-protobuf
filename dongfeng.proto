@@ -215,8 +215,13 @@ message UpdateRecipeResponse {
 
 message Recipe {
 	string recipe = 1;
-	repeated string ingredients = 2;
+	repeated IngredientUnitAmount ingredients = 2;
 	RecipeNutrition nutrition = 3;
+}
+
+message IngredientUnitAmount {
+	string ingredient = 1;
+	double unit_amount = 2;
 }
 
 message RecipeNutrition {
