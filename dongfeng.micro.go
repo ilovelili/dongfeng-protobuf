@@ -45,6 +45,10 @@ It has these top-level messages:
 	Recipe
 	IngredientUnitAmount
 	RecipeNutrition
+	GetProcurementRequest
+	GetProcurementResponse
+	Procurement
+	IngredientAmount
 	GetMenuRequest
 	GetMenuResponse
 	UpdateMenuRequest

@@ -232,6 +232,28 @@ message RecipeNutrition {
 	double heat = 5;
 }
 
+message GetProcurementRequest {	
+	string token = 1;
+	string date = 2;
+	int64 meal_id = 3;
+}
+
+message GetProcurementResponse {	
+	repeated Procurement procurements = 1;
+	repeated IngredientAmount daily_summary = 2;
+}
+
+message Procurement {
+	int64 meal_id = 1;
+	int64 attendance = 2;
+	repeated IngredientAmount procurement = 3;
+}
+
+message IngredientAmount {
+	string ingredient = 1;
+	double amount = 2;
+}
+
 ///////////////////////////////////////////////////
 message GetMenuRequest {	
 	string token = 1;
