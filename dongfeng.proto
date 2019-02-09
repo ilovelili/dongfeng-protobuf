@@ -234,17 +234,17 @@ message RecipeNutrition {
 
 message GetProcurementRequest {	
 	string token = 1;
-	string date = 2;
-	int64 meal_id = 3;
+	string from = 2;
+	string to = 3;
+	int64 meal_id = 4;
 }
 
 message GetProcurementResponse {	
-	repeated Procurement procurements = 1;
-	repeated IngredientAmount daily_summary = 2;
+	repeated Procurement procurements = 1;	
 }
 
 message Procurement {
-	int64 meal_id = 1;
+	string date = 1;
 	int64 attendance = 2;
 	repeated IngredientAmount procurement = 3;
 }
