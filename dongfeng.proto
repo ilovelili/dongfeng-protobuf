@@ -137,7 +137,9 @@ message GetAttendanceCountRequest {
 
 message GetAttendanceCountResponse {
 	int64 sum = 1;
-	repeated AttendanceCount attendance_counts = 2;
+	int64 junior_sum = 2;
+	int64 senior_sum = 3;
+	repeated AttendanceCount attendance_counts = 4;
 }
 
 message AttendanceCount {
