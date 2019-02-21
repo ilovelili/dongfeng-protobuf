@@ -47,7 +47,8 @@ message Setting {
 
 ///////////////////////////////////////////////////
 message UpdateNotificationsRequest {
-	repeated Notification notification = 1;
+	string token = 1;
+	repeated int64 notifications = 2;
 }
 
 message UpdateNotificationsResponse {	
