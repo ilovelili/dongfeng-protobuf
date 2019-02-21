@@ -61,7 +61,8 @@ message Notification {
 	int64 category_id = 5;
 	string details = 6;
 	string link = 7;
-	string time = 8;
+	int64 read = 8;
+	string time = 9;
 }
 
 ///////////////////////////////////////////////////
