@@ -15,6 +15,8 @@ It has these top-level messages:
 	User
 	UploadAvatarResponse
 	Setting
+	UpdateNotificationsRequest
+	UpdateNotificationsResponse
 	SaveNotificationRequest
 	SaveNotificationResponse
 	Notification

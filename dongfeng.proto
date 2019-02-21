@@ -46,6 +46,13 @@ message Setting {
 }
 
 ///////////////////////////////////////////////////
+message UpdateNotificationsRequest {
+	repeated Notification notification = 1;
+}
+
+message UpdateNotificationsResponse {	
+}
+
 message SaveNotificationRequest {
 	Notification notification = 1;
 }
