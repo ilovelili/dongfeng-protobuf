@@ -105,6 +105,7 @@ message NamelistItem {
 	string year = 1;
 	string class = 2;
 	repeated string names = 3;
+	string created_by = 4;
 }
 
 ///////////////////////////////////////////////////
