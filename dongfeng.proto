@@ -94,6 +94,12 @@ message GetNamelistResponse {
 	repeated NamelistItem items = 1;
 }
 
+message UpdateNamelistRequest {
+	repeated NamelistItem items = 1;
+}
+
+message UpdateNamelistResponse {}
+
 message NamelistItem {
 	string year = 1;
 	string class = 2;

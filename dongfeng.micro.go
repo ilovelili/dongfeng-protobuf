@@ -24,6 +24,8 @@ It has these top-level messages:
 	UpdateUserResponse
 	GetNamelistRequest
 	GetNamelistResponse
+	UpdateNamelistRequest
+	UpdateNamelistResponse
 	NamelistItem
 	UpdateAttendanceRequest
 	UpdateAttendanceResponse
