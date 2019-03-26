@@ -95,7 +95,8 @@ message GetNamelistResponse {
 }
 
 message UpdateNamelistRequest {
-	repeated NamelistItem items = 1;
+	string token = 1;
+	repeated NamelistItem items = 2;
 }
 
 message UpdateNamelistResponse {}
