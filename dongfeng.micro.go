@@ -27,6 +27,7 @@ It has these top-level messages:
 	UpdateNamelistRequest
 	UpdateNamelistResponse
 	NamelistItem
+	NameItem
 	UpdateAttendanceRequest
 	UpdateAttendanceResponse
 	ClassAttendance

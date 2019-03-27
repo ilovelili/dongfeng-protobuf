@@ -104,8 +104,13 @@ message UpdateNamelistResponse {}
 message NamelistItem {
 	string year = 1;
 	string class = 2;
-	repeated string names = 3;
+	repeated NameItem names = 3;
 	string created_by = 4;
+}
+
+message NameItem {
+	int64 id = 1;
+	string name = 2;
 }
 
 ///////////////////////////////////////////////////
