@@ -140,7 +140,7 @@ message TeacherlistItem {
 message TeacherItem {
 	int64 id = 1;	
 	string name = 2;
-	repeated string class = 3;
+	string class = 3;
 	string email = 4;
 	string role = 5;
 	string created_by = 6;
