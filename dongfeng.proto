@@ -134,6 +134,7 @@ message UpdateTeacherlistResponse {}
 message TeacherlistItem {
 	string year = 1;
 	repeated TeacherItem items = 2;
+	string created_by = 3;
 }
 
 message TeacherItem {
