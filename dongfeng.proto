@@ -114,6 +114,38 @@ message NameItem {
 }
 
 ///////////////////////////////////////////////////
+message GetTeacherlistRequest {
+	string token = 1;
+	string year = 2;
+	string class = 3;
+}
+
+message GetTeacherlistResponse {
+	repeated TeacherlistItem items = 1;
+}
+
+message UpdateTeacherlistRequest {
+	string token = 1;
+	repeated TeacherlistItem items = 2;
+}
+
+message UpdateTeacherlistResponse {}
+
+message TeacherlistItem {
+	string year = 1;	
+	repeated TeacherItem names = 2;
+	string created_by = 3;
+}
+
+message TeacherItem {
+	int64 id = 1;
+	string name = 2;
+	repeated string class = 3;
+	string email = 4;
+	string role = 5;
+}
+
+///////////////////////////////////////////////////
 message UpdateAttendanceRequest {
 	string token = 1;
 	repeated ClassAttendance attendances = 2;

@@ -28,6 +28,12 @@ It has these top-level messages:
 	UpdateNamelistResponse
 	NamelistItem
 	NameItem
+	GetTeacherlistRequest
+	GetTeacherlistResponse
+	UpdateTeacherlistRequest
+	UpdateTeacherlistResponse
+	TeacherlistItem
+	TeacherItem
 	UpdateAttendanceRequest
 	UpdateAttendanceResponse
 	ClassAttendance
