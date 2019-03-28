@@ -32,7 +32,6 @@ It has these top-level messages:
 	GetTeacherlistResponse
 	UpdateTeacherlistRequest
 	UpdateTeacherlistResponse
-	TeacherlistItem
 	TeacherItem
 	UpdateAttendanceRequest
 	UpdateAttendanceResponse

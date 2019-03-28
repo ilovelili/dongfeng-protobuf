@@ -121,20 +121,15 @@ message GetTeacherlistRequest {
 }
 
 message GetTeacherlistResponse {
-	repeated TeacherlistItem items = 1;
+	repeated TeacherItem items = 1;
 }
 
 message UpdateTeacherlistRequest {
 	string token = 1;
-	repeated TeacherlistItem items = 2;
+	repeated TeacherItem items = 2;
 }
 
 message UpdateTeacherlistResponse {}
-
-message TeacherlistItem {	
-	repeated TeacherItem names = 1;
-	string created_by = 2;
-}
 
 message TeacherItem {
 	int64 id = 1;
@@ -143,6 +138,7 @@ message TeacherItem {
 	repeated string class = 4;
 	string email = 5;
 	string role = 6;
+	string created_by = 7;
 }
 
 ///////////////////////////////////////////////////
