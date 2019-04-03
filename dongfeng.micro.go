@@ -22,6 +22,11 @@ It has these top-level messages:
 	Notification
 	UpdateUserRequest
 	UpdateUserResponse
+	GetClasslistRequest
+	GetClasslistResponse
+	UpdateClasslistRequest
+	UpdateClasslistResponse
+	ClassItem
 	GetNamelistRequest
 	GetNamelistResponse
 	UpdateNamelistRequest

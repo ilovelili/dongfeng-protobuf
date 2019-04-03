@@ -82,7 +82,29 @@ message UpdateUserRequest {
 
 message UpdateUserResponse {}
 
-// ******************************************************* attendance message definition *******************************************************
+
+///////////////////////////////////////////////////
+message GetClasslistRequest {
+	string token = 1;	
+}
+
+message GetClasslistResponse {	
+	repeated ClassItem items = 1;
+}
+
+message UpdateClasslistRequest {
+	string token = 1;
+	repeated ClassItem items = 2;
+}
+
+message UpdateClasslistResponse {}
+
+message ClassItem {
+	int64 id = 1;
+	string name = 2;
+	string created_by = 3;
+}
+
 ///////////////////////////////////////////////////
 message GetNamelistRequest {
 	string token = 1;
