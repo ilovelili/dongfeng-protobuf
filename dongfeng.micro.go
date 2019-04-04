@@ -22,23 +22,21 @@ It has these top-level messages:
 	Notification
 	UpdateUserRequest
 	UpdateUserResponse
-	GetClasslistRequest
-	GetClasslistResponse
-	UpdateClasslistRequest
-	UpdateClasslistResponse
-	ClassItem
-	GetNamelistRequest
-	GetNamelistResponse
-	UpdateNamelistRequest
+	GetClassRequest
+	GetClassResponse
+	UpdateClassRequest
+	UpdateClassResponse
+	Class
+	GetPupilRequest
+	GetPupilResponse
+	UpdatePupilRequest
 	UpdateNamelistResponse
-	NamelistItem
-	NameItem
-	GetTeacherlistRequest
-	GetTeacherlistResponse
-	UpdateTeacherlistRequest
+	Pupil
+	GetTeacherRequest
+	GetTeacherResponse
+	UpdateTeacherRequest
 	UpdateTeacherlistResponse
-	TeacherlistItem
-	TeacherItem
+	Teacher
 	UpdateAttendanceRequest
 	UpdateAttendanceResponse
 	ClassAttendance

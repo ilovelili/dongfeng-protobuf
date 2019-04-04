@@ -84,88 +84,79 @@ message UpdateUserResponse {}
 
 
 ///////////////////////////////////////////////////
-message GetClasslistRequest {
+message GetClassRequest {
 	string token = 1;	
 }
 
-message GetClasslistResponse {	
-	repeated ClassItem items = 1;
+message GetClassResponse {	
+	repeated Class classes = 1;
 }
 
-message UpdateClasslistRequest {
+message UpdateClassRequest {
 	string token = 1;
-	repeated ClassItem items = 2;
+	repeated Class classes = 2;
 }
 
-message UpdateClasslistResponse {}
+message UpdateClassResponse {}
 
-message ClassItem {
+message Class {
 	int64 id = 1;
 	string name = 2;
 	string created_by = 3;
 }
 
 ///////////////////////////////////////////////////
-message GetNamelistRequest {
+message GetPupilRequest {
 	string token = 1;
 	string year = 2;
 	string class = 3;	
 }
 
-message GetNamelistResponse {
-	repeated NamelistItem items = 1;
+message GetPupilResponse {
+	repeated Pupil pupils = 1;
 }
 
-message UpdateNamelistRequest {
+message UpdatePupilRequest {
 	string token = 1;
-	repeated NamelistItem items = 2;
+	repeated Pupil pupils = 2;
 }
 
 message UpdateNamelistResponse {}
 
-message NamelistItem {
-	string year = 1;
-	string class = 2;
-	repeated NameItem names = 3;
-	string created_by = 4;
-}
-
-message NameItem {
+message Pupil {
 	int64 id = 1;
-	string name = 2;
+	string year = 2;
+	string class = 3;
+	string name = 4;
+	string created_by = 5;
 }
 
 ///////////////////////////////////////////////////
-message GetTeacherlistRequest {
+message GetTeacherRequest {
 	string token = 1;
 	string year = 2;
 	string class = 3;
 }
 
-message GetTeacherlistResponse {	
-	repeated TeacherlistItem items = 1;
+message GetTeacherResponse {	
+	repeated Teacher teachers = 1;
 }
 
-message UpdateTeacherlistRequest {
+message UpdateTeacherRequest {
 	string token = 1;
-	repeated TeacherlistItem items = 2;
+	repeated Teacher teachers = 2;
 }
 
 message UpdateTeacherlistResponse {}
 
-message TeacherlistItem {
-	string year = 1;
-	repeated TeacherItem items = 2;
-	string created_by = 3;
-}
-
-message TeacherItem {
-	int64 id = 1;	
-	string name = 2;
-	string class = 3;
-	string email = 4;
-	string role = 5;
-	string created_by = 6;
+message Teacher {
+	int64 id = 1;
+	string year = 2;
+	string name = 3;
+	string class = 4;
+	string email = 5;
+	string role = 6;
+	string created_by = 7;
 }
 
 ///////////////////////////////////////////////////
