@@ -30,12 +30,12 @@ It has these top-level messages:
 	GetPupilRequest
 	GetPupilResponse
 	UpdatePupilRequest
-	UpdateNamelistResponse
+	UpdatePupilResponse
 	Pupil
 	GetTeacherRequest
 	GetTeacherResponse
 	UpdateTeacherRequest
-	UpdateTeacherlistResponse
+	UpdateTeacherResponse
 	Teacher
 	UpdateAttendanceRequest
 	UpdateAttendanceResponse

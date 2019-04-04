@@ -121,7 +121,7 @@ message UpdatePupilRequest {
 	repeated Pupil pupils = 2;
 }
 
-message UpdateNamelistResponse {}
+message UpdatePupilResponse {}
 
 message Pupil {
 	int64 id = 1;
@@ -147,7 +147,7 @@ message UpdateTeacherRequest {
 	repeated Teacher teachers = 2;
 }
 
-message UpdateTeacherlistResponse {}
+message UpdateTeacherResponse {}
 
 message Teacher {
 	int64 id = 1;
