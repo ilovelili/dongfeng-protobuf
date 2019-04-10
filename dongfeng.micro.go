@@ -37,11 +37,10 @@ It has these top-level messages:
 	UpdateTeacherRequest
 	UpdateTeacherResponse
 	Teacher
-	UpdateAttendanceRequest
-	UpdateAttendanceResponse
-	ClassAttendance
 	GetAttendanceRequest
 	GetAttendanceResponse
+	UpdateAttendanceRequest
+	UpdateAttendanceResponse
 	Attendance
 	GetAttendanceCountRequest
 	GetAttendanceCountResponse
