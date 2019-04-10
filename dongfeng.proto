@@ -183,7 +183,7 @@ message Attendance {
 	string year = 1;
 	string date = 2;
 	string class = 3;	
-	string name = 4;
+	repeated string names = 4;
 }
 
 ///////////////////////////////////////////////////
