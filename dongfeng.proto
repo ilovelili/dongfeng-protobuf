@@ -179,13 +179,11 @@ message UpdateAttendanceRequest {
 
 message UpdateAttendanceResponse {}
 
-message Attendance {
-	int64 id  = 1;
-	string year = 2;
-	string date = 3;
-	string class = 4;	
-	string name = 5;
-	string attendance = 6;
+message Attendance {	
+	string year = 1;
+	string date = 2;
+	string class = 3;	
+	string name = 4;
 }
 
 ///////////////////////////////////////////////////
