@@ -42,6 +42,7 @@ It has these top-level messages:
 	UpdateAttendanceRequest
 	UpdateAttendanceResponse
 	Attendance
+	Holiday
 	GetAttendanceCountRequest
 	GetAttendanceCountResponse
 	AttendanceCount

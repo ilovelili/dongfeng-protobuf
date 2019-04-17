@@ -183,9 +183,14 @@ message UpdateAttendanceResponse {}
 message Attendance {	
 	string year = 1;
 	string date = 2;
-	string class = 3;
-	int64 holiday = 4; // 0: working day, 1: weekend, 2: holiday
+	string class = 3;	
 	repeated string names = 5;
+	repeated Holiday holidays = 6;
+}
+
+message Holiday {
+	string date = 1;
+	int64 type = 2; // 0: working day | 1: weekend | 2: holiday
 }
 
 ///////////////////////////////////////////////////
