@@ -170,8 +170,8 @@ message GetAttendanceRequest {
 }
 
 message GetAttendanceResponse {
-	repeated Attendance attendances = 1;
-	repeated Holiday holidays = 2;
+	repeated Attendance attendances = 1;	
+	repeated Holiday holidays = 3;
 }
 
 message UpdateAttendanceRequest {
@@ -185,7 +185,8 @@ message Attendance {
 	string year = 1;
 	string date = 2;
 	string class = 3;	
-	repeated string names = 5;	
+	repeated string attendances = 5;
+	repeated string absences = 6;
 }
 
 message Holiday {
