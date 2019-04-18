@@ -17,8 +17,8 @@ It has these top-level messages:
 	Setting
 	UpdateNotificationsRequest
 	UpdateNotificationsResponse
-	SaveNotificationRequest
-	SaveNotificationResponse
+	UpdateNotificationRequest
+	UpdateNotificationResponse
 	Notification
 	UpdateUserRequest
 	UpdateUserResponse

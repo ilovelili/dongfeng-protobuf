@@ -54,11 +54,11 @@ message UpdateNotificationsRequest {
 message UpdateNotificationsResponse {	
 }
 
-message SaveNotificationRequest {
+message UpdateNotificationRequest {
 	Notification notification = 1;
 }
 
-message SaveNotificationResponse {	
+message UpdateNotificationResponse {	
 }
 
 message Notification {
