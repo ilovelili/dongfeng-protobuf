@@ -214,6 +214,47 @@ message AttendanceCount {
 	int64 count = 3;
 }
 
+// ******************************************************* physique message definition *******************************************************
+///////////////////////////////////////////////////
+message UpdatePhysiqueRequest {
+	string token = 1;
+	repeated Physique physiques = 2;
+}
+
+message UpdatePhysiqueResponse {
+}
+
+message Physique {
+	int64 id = 1;
+	string name = 2;
+	string year = 3;
+	string class = 4;	
+	enum Gender {
+		F = 0;
+		M = 1;
+	}
+	Gender gender = 5;
+	string birth_date = 6;
+	string exam_date = 7;
+	double height = 8;
+	double weight = 9;
+	string created_by = 10;
+}
+
+///////////////////////////////////////////////////
+message GetPhysiqueRequest {
+	string token = 1;	
+	string from = 2;
+	string to = 3;
+	string year = 4;
+	string class = 5;
+	string name = 6;
+}
+
+message GetPhysiqueResponse {
+	// TBD
+}
+
 // ******************************************************* nutrition message definition *******************************************************
 ///////////////////////////////////////////////////
 message GetIngredientRequest {
@@ -345,45 +386,4 @@ message Menu {
 	string recipe = 2;
 	int64 breakfast_or_lunch = 3;
 	int64 junior_or_senior = 4;	
-}
-
-// ******************************************************* physique message definition *******************************************************
-///////////////////////////////////////////////////
-message UpdatePhysiqueRequest {
-	string token = 1;	
-	repeated Physique physiques = 3;
-}
-
-message UpdatePhysiqueResponse {
-}
-
-message Physique {
-	string class = 1;
-	repeated PhysiqueItem items = 2;
-}
-
-message PhysiqueItem {
-	string name = 1;
-	enum Gender {
-		M = 0;
-		F = 1;
-	}
-	Gender gender = 2;
-	string birth_date = 3;
-	string exam_date = 4;
-	float height = 5;
-	float weight = 6;
-}
-
-///////////////////////////////////////////////////
-message GetPhysiqueRequest {
-	string token = 1;	
-	string from = 2;
-	string to = 3;
-	string class = 4;
-	string name = 5;
-}
-
-message GetPhysiqueResponse {
-	// TBD
 }

@@ -46,6 +46,11 @@ It has these top-level messages:
 	GetAttendanceCountRequest
 	GetAttendanceCountResponse
 	AttendanceCount
+	UpdatePhysiqueRequest
+	UpdatePhysiqueResponse
+	Physique
+	GetPhysiqueRequest
+	GetPhysiqueResponse
 	GetIngredientRequest
 	GetIngredientResponse
 	UpdateIngredientRequest
@@ -68,12 +73,6 @@ It has these top-level messages:
 	UpdateMenuRequest
 	UpdateMenuResponse
 	Menu
-	UpdatePhysiqueRequest
-	UpdatePhysiqueResponse
-	Physique
-	PhysiqueItem
-	GetPhysiqueRequest
-	GetPhysiqueResponse
 */
 package dongfeng_protobuf
 
