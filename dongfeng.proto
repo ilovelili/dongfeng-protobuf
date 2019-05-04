@@ -239,20 +239,28 @@ message Physique {
 	double height = 8;
 	double weight = 9;
 	string created_by = 10;
+
+	// requried by response
+	string age = 11;
+	double age_cmp = 12;
+	string height_p = 13;
+	string weight_p = 14;
+	string height_weight_p = 15;
+	double bmi = 16;
+	double fat_cofficient = 17;
+	string conclusion = 18;
 }
 
 ///////////////////////////////////////////////////
 message GetPhysiqueRequest {
 	string token = 1;	
-	string from = 2;
-	string to = 3;
-	string year = 4;
-	string class = 5;
-	string name = 6;
+	string year = 2;
+	string class = 3;
+	string name = 4;
 }
 
 message GetPhysiqueResponse {
-	// TBD
+	repeated Physique physiques = 1;
 }
 
 // ******************************************************* nutrition message definition *******************************************************
