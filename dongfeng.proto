@@ -221,19 +221,14 @@ message UpdatePhysiqueRequest {
 	repeated Physique physiques = 2;
 }
 
-message UpdatePhysiqueResponse {
-}
+message UpdatePhysiqueResponse {}
 
 message Physique {
 	int64 id = 1;
 	string name = 2;
 	string year = 3;
 	string class = 4;	
-	enum Gender {
-		F = 0;
-		M = 1;
-	}
-	Gender gender = 5;
+	string gender = 5;
 	string birth_date = 6;
 	string exam_date = 7;
 	double height = 8;
