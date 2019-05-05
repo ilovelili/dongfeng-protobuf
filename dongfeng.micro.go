@@ -51,6 +51,21 @@ It has these top-level messages:
 	Physique
 	GetPhysiqueRequest
 	GetPhysiqueResponse
+	GetAgeHeightWeightPMasterRequest
+	GetAgeHeightWeightPMasterResponse
+	AgeHeightWeightPMaster
+	GetAgeHeightWeightSDMasterRequest
+	GetAgeHeightWeightSDMasterResponse
+	AgeHeightWeightSDMaster
+	GetBMIMasterRequest
+	GetBMIMasterResponse
+	BMIMaster
+	GetHeightToWeightPMasterRequest
+	GetHeightToWeightPMasterResponse
+	HeightToWeightPMaster
+	GetHeightToWeightSDMasterRequest
+	GetHeightToWeightSDMasterResponse
+	HeightToWeightSDMaster
 	GetIngredientRequest
 	GetIngredientResponse
 	UpdateIngredientRequest
