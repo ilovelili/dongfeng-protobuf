@@ -66,6 +66,11 @@ It has these top-level messages:
 	GetHeightToWeightSDMasterRequest
 	GetHeightToWeightSDMasterResponse
 	HeightToWeightSDMaster
+	GetMenuRequest
+	GetMenuResponse
+	UpdateMenuRequest
+	UpdateMenuResponse
+	Menu
 	GetIngredientRequest
 	GetIngredientResponse
 	UpdateIngredientRequest
@@ -83,11 +88,6 @@ It has these top-level messages:
 	GetProcurementResponse
 	Procurement
 	IngredientAmount
-	GetMenuRequest
-	GetMenuResponse
-	UpdateMenuRequest
-	UpdateMenuResponse
-	Menu
 */
 package dongfeng_protobuf
 

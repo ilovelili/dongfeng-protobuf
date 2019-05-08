@@ -359,6 +359,33 @@ message HeightToWeightSDMaster {
 
 // ******************************************************* nutrition message definition *******************************************************
 ///////////////////////////////////////////////////
+message GetMenuRequest {
+	string token = 1;	
+	string from = 2;
+	string to = 3;
+	int64 junior_or_senior = 4;
+	int64 breakfast_or_lunch = 5;
+}
+
+message GetMenuResponse {
+	repeated Menu menus = 1;
+}
+
+message UpdateMenuRequest {
+	repeated Menu menus = 1;
+}
+
+message UpdateMenuResponse {
+}
+
+message Menu {
+	string date = 1;
+	string recipe = 2;
+	int64 breakfast_or_lunch = 3;
+	int64 junior_or_senior = 4;
+}
+
+///////////////////////////////////////////////////
 message GetIngredientRequest {
 	string token = 1;
 	string ingredient = 2;
@@ -463,29 +490,4 @@ message Procurement {
 message IngredientAmount {
 	string ingredient = 1;
 	double amount = 2;
-}
-
-///////////////////////////////////////////////////
-message GetMenuRequest {
-	string token = 1;
-	string from = 2;
-	string to = 3;
-}
-
-message GetMenuResponse {
-	repeated Menu menu = 1;
-}
-
-message UpdateMenuRequest {
-	repeated Menu menus = 1;
-}
-
-message UpdateMenuResponse {
-}
-
-message Menu {
-	string date = 1;
-	string recipe = 2;
-	int64 breakfast_or_lunch = 3;
-	int64 junior_or_senior = 4;
 }
