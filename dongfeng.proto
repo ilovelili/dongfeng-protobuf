@@ -193,17 +193,18 @@ message Holiday {
 }
 
 ///////////////////////////////////////////////////
-message GetAttendanceCountRequest {
+message CountAttendanceRequest {
 	string from = 1;
 	string to = 2;
 	string class = 3;
 }
 
-message GetAttendanceCountResponse {
+message CountAttendanceResponse {
 	int64 sum = 1;
 	int64 junior_sum = 2;
-	int64 senior_sum = 3;
-	repeated AttendanceCount attendance_counts = 4;
+	int64 middle_sum = 3;
+	int64 senior_sum = 4;
+	repeated AttendanceCount attendance_counts = 5;
 }
 
 message AttendanceCount {

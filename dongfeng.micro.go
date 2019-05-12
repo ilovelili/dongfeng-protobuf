@@ -43,8 +43,8 @@ It has these top-level messages:
 	UpdateAttendanceResponse
 	Attendance
 	Holiday
-	GetAttendanceCountRequest
-	GetAttendanceCountResponse
+	CountAttendanceRequest
+	CountAttendanceResponse
 	AttendanceCount
 	UpdatePhysiqueRequest
 	UpdatePhysiqueResponse
