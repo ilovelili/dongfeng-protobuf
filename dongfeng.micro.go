@@ -71,19 +71,16 @@ It has these top-level messages:
 	UpdateMenuRequest
 	UpdateMenuResponse
 	Menu
-	GetIngredientRequest
-	GetIngredientResponse
-	UpdateIngredientRequest
-	UpdateIngredientResponse
-	Ingredient
-	IngredientNutrition
 	GetRecipeRequest
 	GetRecipeResponse
 	UpdateRecipeRequest
 	UpdateRecipeResponse
 	Recipe
-	IngredientUnitAmount
-	RecipeNutrition
+	Ingredient
+	GetIngredientRequest
+	GetIngredientResponse
+	UpdateIngredientRequest
+	UpdateIngredientResponse
 	GetProcurementRequest
 	GetProcurementResponse
 	Procurement

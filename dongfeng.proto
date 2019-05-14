@@ -387,57 +387,9 @@ message Menu {
 }
 
 ///////////////////////////////////////////////////
-message GetIngredientRequest {
-	string token = 1;
-	string ingredient = 2;
-}
-
-message GetIngredientResponse {
-	repeated Ingredient ingredients = 1;
-}
-
-message UpdateIngredientRequest {
-	string token = 1;
-	repeated Ingredient ingredients = 2;
-}
-
-message UpdateIngredientResponse {
-}
-
-message Ingredient {
-	string ingredient = 1;
-	IngredientNutrition nutrition = 2;
-}
-
-message IngredientNutrition {
-	double protein_100g = 1;
-	double protein_daily = 2;
-	double fat_100g = 3;
-	double fat_daily = 4;
-	double carbohydrate_100g = 5;
-	double carbohydrate_daily = 6;
-	double heat_100g = 7;
-	double heat_daily = 8;
-	double calcium_100g = 9;
-	double calcium_daily = 10;
-	double iron_100g = 11;
-	double iron_daily = 12;
-	double zinc_100g = 13;
-	double zinc_daily = 14;
-	double va_100g = 15;
-	double va_daily = 16;
-	double vb1_100g = 17;
-	double vb1_daily = 18;
-	double vb2_100g = 19;
-	double vb2_daily = 20;
-	double vc_100g = 21;
-	double vc_daily = 22;
-}
-
-///////////////////////////////////////////////////
 message GetRecipeRequest {
 	string token = 1;
-	string recipe = 2;
+	repeated string names = 2;
 }
 
 message GetRecipeResponse {
@@ -454,21 +406,57 @@ message UpdateRecipeResponse {
 
 message Recipe {
 	string recipe = 1;
-	repeated IngredientUnitAmount ingredients = 2;
-	RecipeNutrition nutrition = 3;
+	repeated Ingredient ingredients = 2;
+	double carbohydrate = 3;
+	double dietaryfiber = 4;
+	double protein = 5;
+	double fat = 6;
+	double heat = 7;
 }
 
-message IngredientUnitAmount {
+message Ingredient {
 	string ingredient = 1;
-	double unit_amount = 2;
+	double protein_100g = 2;
+	double protein_daily = 3;
+	double fat_100g = 4;
+	double fat_daily = 5;
+	double carbohydrate_100g = 6;
+	double carbohydrate_daily = 7;
+	double heat_100g = 8;
+	double heat_daily = 9;
+	double calcium_100g = 10;
+	double calcium_daily = 11;
+	double iron_100g = 12;
+	double iron_daily = 13;
+	double zinc_100g = 14;
+	double zinc_daily = 15;
+	double va_100g = 16;
+	double va_daily = 17;
+	double vb1_100g = 18;
+	double vb1_daily = 19;
+	double vb2_100g = 20;
+	double vb2_daily = 21;
+	double vc_100g = 22;
+	double vc_daily = 23;
+	string category = 24;
 }
 
-message RecipeNutrition {
-	double carbohydrate = 1;
-	double dietaryfiber = 2;
-	double protein = 3;
-	double fat = 4;
-	double heat = 5;
+///////////////////////////////////////////////////
+message GetIngredientRequest {
+	string token = 1;
+	string ingredient = 2;
+}
+
+message GetIngredientResponse {
+	repeated Ingredient ingredients = 1;
+}
+
+message UpdateIngredientRequest {
+	string token = 1;
+	repeated Ingredient ingredients = 2;
+}
+
+message UpdateIngredientResponse {
 }
 
 message GetProcurementRequest {
