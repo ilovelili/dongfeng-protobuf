@@ -414,6 +414,24 @@ message Recipe {
 	double heat = 7;
 }
 
+///////////////////////////////////////////////////
+message GetIngredientRequest {
+	string token = 1;
+	repeated string ingredients = 2;
+}
+
+message GetIngredientResponse {
+	repeated Ingredient ingredients = 1;
+}
+
+message UpdateIngredientRequest {
+	string token = 1;
+	repeated Ingredient ingredients = 2;
+}
+
+message UpdateIngredientResponse {
+}
+
 message Ingredient {
 	string ingredient = 1;
 	double protein_100g = 2;
@@ -439,26 +457,10 @@ message Ingredient {
 	double vc_100g = 22;
 	double vc_daily = 23;
 	string category = 24;
+	string alias = 25;
 }
 
 ///////////////////////////////////////////////////
-message GetIngredientRequest {
-	string token = 1;
-	string ingredient = 2;
-}
-
-message GetIngredientResponse {
-	repeated Ingredient ingredients = 1;
-}
-
-message UpdateIngredientRequest {
-	string token = 1;
-	repeated Ingredient ingredients = 2;
-}
-
-message UpdateIngredientResponse {
-}
-
 message GetProcurementRequest {
 	string token = 1;
 	string from = 2;

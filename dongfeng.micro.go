@@ -76,11 +76,11 @@ It has these top-level messages:
 	UpdateRecipeRequest
 	UpdateRecipeResponse
 	Recipe
-	Ingredient
 	GetIngredientRequest
 	GetIngredientResponse
 	UpdateIngredientRequest
 	UpdateIngredientResponse
+	Ingredient
 	GetProcurementRequest
 	GetProcurementResponse
 	Procurement
