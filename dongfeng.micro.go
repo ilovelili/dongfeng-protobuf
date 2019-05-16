@@ -78,6 +78,8 @@ It has these top-level messages:
 	Recipe
 	GetIngredientRequest
 	GetIngredientResponse
+	GetIngredientNameRequest
+	GetIngredientNameResponse
 	UpdateIngredientRequest
 	UpdateIngredientResponse
 	Ingredient
