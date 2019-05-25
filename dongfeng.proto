@@ -490,3 +490,25 @@ message IngredientAmount {
 	string ingredient = 1;
 	double amount = 2;
 }
+
+// ******************************************************* growth profile message definition *******************************************************
+message GetProfileRequest {
+	string token = 1;
+	string year = 2;
+	string class = 3;
+	string name = 4;
+}
+
+message GetProfileResponse {
+	string profile = 1;
+}
+
+message UpdateProfileRequest {
+	string token = 1;
+	string year = 2;
+	string class = 3;
+	string name = 4;
+	string profile = 5;
+}
+
+message UpdateProfileResponse {}

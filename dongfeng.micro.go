@@ -87,6 +87,10 @@ It has these top-level messages:
 	GetProcurementResponse
 	Procurement
 	IngredientAmount
+	GetProfileRequest
+	GetProfileResponse
+	UpdateProfileRequest
+	UpdateProfileResponse
 */
 package dongfeng_protobuf
 
