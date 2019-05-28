@@ -91,6 +91,9 @@ It has these top-level messages:
 	GetProfileResponse
 	UpdateProfileRequest
 	UpdateProfileResponse
+	GetProfilesRequest
+	GetProfilesResponse
+	Profile
 */
 package dongfeng_protobuf
 
