@@ -494,9 +494,11 @@ message IngredientAmount {
 // ******************************************************* growth profile message definition *******************************************************
 message GetProfileRequest {
 	string token = 1;
-	string year = 2;
-	string class = 3;
-	string name = 4;
+	int64 id = 2;
+	string year = 3;
+	string class = 4;
+	string date = 5;
+	string name = 6;
 }
 
 message GetProfileResponse {
@@ -507,8 +509,28 @@ message UpdateProfileRequest {
 	string token = 1;
 	string year = 2;
 	string class = 3;
-	string name = 4;
-	string profile = 5;
+	string date = 4;
+	string name = 5;
+	string profile = 6;
 }
 
 message UpdateProfileResponse {}
+
+message GetProfilesRequest {
+	string token = 1;
+	string year = 2;
+	string class = 3;
+	string name = 4;
+}
+
+message GetProfilesResponse {	
+	repeated Profile profiles = 1;
+}
+
+message Profile {
+	int64 id = 1;
+	string year = 2;
+	string class = 3;
+	string date = 4;
+	string name = 5;	
+}
