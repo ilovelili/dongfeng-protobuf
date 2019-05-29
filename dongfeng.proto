@@ -534,3 +534,25 @@ message Profile {
 	string date = 4;
 	string name = 5;	
 }
+
+message GetProfileNamesRequest {	
+	string year = 1;
+	string class = 2;
+	string date = 3;
+	string name = 4;
+}
+
+message GetProfileNamesResponse {
+	repeated string names = 1;
+}
+
+message GetProfileDatesRequest {	
+	string year = 1;
+	string class = 2;
+	string date = 3;
+	string name = 4;
+}
+
+message GetProfileDatesResponse {
+	repeated string dates = 1;
+}
