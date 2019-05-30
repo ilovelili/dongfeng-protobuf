@@ -94,10 +94,6 @@ It has these top-level messages:
 	GetProfilesRequest
 	GetProfilesResponse
 	Profile
-	GetProfileNamesRequest
-	GetProfileNamesResponse
-	GetProfileDatesRequest
-	GetProfileDatesResponse
 */
 package dongfeng_protobuf
 
