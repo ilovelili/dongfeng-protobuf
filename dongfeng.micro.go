@@ -89,6 +89,8 @@ It has these top-level messages:
 	IngredientAmount
 	GetProfileRequest
 	GetProfileResponse
+	GetPrevOrNextProfileRequest
+	GetPrevOrNextProfileResponse
 	UpdateProfileRequest
 	UpdateProfileResponse
 	GetProfilesRequest

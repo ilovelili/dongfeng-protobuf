@@ -505,6 +505,18 @@ message GetProfileResponse {
 	string profile = 1;
 }
 
+message GetPrevOrNextProfileRequest {
+	string token = 1;	
+	string year = 2;
+	string class = 3;
+	string date = 4;
+	string name = 5;
+}
+
+message GetPrevOrNextProfileResponse {
+	string date = 1;
+}
+
 message UpdateProfileRequest {
 	string token = 1;
 	string year = 2;
