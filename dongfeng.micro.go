@@ -96,6 +96,8 @@ It has these top-level messages:
 	GetProfilesRequest
 	GetProfilesResponse
 	Profile
+	UpdateEbookRequest
+	UpdateEbookResponse
 */
 package dongfeng_protobuf
 

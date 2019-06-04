@@ -547,3 +547,17 @@ message Profile {
 	string date = 4;
 	string name = 5;	
 }
+
+message UpdateEbookRequest {
+	string token = 1;
+	string year = 2;
+	string class = 3;
+	string name = 4;
+	string date = 5;
+	repeated string images = 6;
+	string html = 7;
+	string css = 8;
+}
+
+message UpdateEbookResponse {
+}
