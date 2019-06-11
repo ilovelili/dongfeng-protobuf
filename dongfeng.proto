@@ -307,10 +307,10 @@ message GetBMIMasterResponse {
 	repeated BMIMaster masters = 1;
 }
 
-message BMIMaster {	
+message BMIMaster {
 	int64 id = 1;
 	string gender = 2;
-	string age = 3;	
+	string age = 3;
 	double avg = 4;
 	double sd1 = 5;
 	double sd2 = 6;
@@ -325,7 +325,7 @@ message GetHeightToWeightPMasterResponse {
 	repeated HeightToWeightPMaster masters = 1;
 }
 
-message HeightToWeightPMaster {	
+message HeightToWeightPMaster {
 	int64 id = 1;
 	string gender = 2;
 	double height = 3;
@@ -361,7 +361,7 @@ message HeightToWeightSDMaster {
 // ******************************************************* nutrition message definition *******************************************************
 ///////////////////////////////////////////////////
 message GetMenuRequest {
-	string token = 1;	
+	string token = 1;
 	string from = 2;
 	string to = 3;
 	int64 junior_or_senior = 4;
@@ -506,7 +506,7 @@ message GetProfileResponse {
 }
 
 message GetPrevOrNextProfileRequest {
-	string token = 1;	
+	string token = 1;
 	string year = 2;
 	string class = 3;
 	string date = 4;
@@ -536,7 +536,7 @@ message GetProfilesRequest {
 	string name = 4;
 }
 
-message GetProfilesResponse {	
+message GetProfilesResponse {
 	repeated Profile profiles = 1;
 }
 
@@ -545,7 +545,21 @@ message Profile {
 	string year = 2;
 	string class = 3;
 	string date = 4;
-	string name = 5;	
+	string name = 5;
+}
+
+///////////////////////////////////////////////////
+message GetEbooksRequest {
+	string token = 1;
+	string year = 2;
+	string class = 3;
+	string name = 4;
+	string from = 5;
+	string to = 6;
+}
+
+message GetEbooksResponse {
+	repeated Ebook ebooks = 1;
 }
 
 message UpdateEbookRequest {
@@ -560,4 +574,12 @@ message UpdateEbookRequest {
 }
 
 message UpdateEbookResponse {
+}
+
+message Ebook {
+	int64 id = 1;
+	string year = 2;
+	string class = 3;
+	string name = 4;
+	string date = 5;
 }
