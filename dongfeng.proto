@@ -577,5 +577,6 @@ message UpdateEbookResponse {
 message Ebook {	
 	string year = 1;
 	string class = 2;
-	string name = 3;	
+	string name = 3;
+	repeated string dates = 4;
 }
