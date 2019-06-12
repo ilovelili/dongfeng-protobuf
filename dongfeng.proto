@@ -553,9 +553,7 @@ message GetEbooksRequest {
 	string token = 1;
 	string year = 2;
 	string class = 3;
-	string name = 4;
-	string from = 5;
-	string to = 6;
+	string name = 4;	
 }
 
 message GetEbooksResponse {
@@ -576,10 +574,8 @@ message UpdateEbookRequest {
 message UpdateEbookResponse {
 }
 
-message Ebook {
-	int64 id = 1;
-	string year = 2;
-	string class = 3;
-	string name = 4;
-	string date = 5;
+message Ebook {	
+	string year = 1;
+	string class = 2;
+	string name = 3;	
 }
