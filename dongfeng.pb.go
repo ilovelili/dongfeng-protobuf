@@ -5126,100 +5126,6 @@ func (m *UpdateEbookResponse) XXX_DiscardUnknown() {
 
 var xxx_messageInfo_UpdateEbookResponse proto.InternalMessageInfo
 
-type CreateEbookRequest struct {
-	Token                string   `protobuf:"bytes,1,opt,name=token,proto3" json:"token"`
-	Year                 string   `protobuf:"bytes,2,opt,name=year,proto3" json:"year"`
-	Class                string   `protobuf:"bytes,3,opt,name=class,proto3" json:"class"`
-	Name                 string   `protobuf:"bytes,4,opt,name=name,proto3" json:"name"`
-	XXX_NoUnkeyedLiteral struct{} `json:"-"`
-	XXX_unrecognized     []byte   `json:"-"`
-	XXX_sizecache        int32    `json:"-"`
-}
-
-func (m *CreateEbookRequest) Reset()         { *m = CreateEbookRequest{} }
-func (m *CreateEbookRequest) String() string { return proto.CompactTextString(m) }
-func (*CreateEbookRequest) ProtoMessage()    {}
-func (*CreateEbookRequest) Descriptor() ([]byte, []int) {
-	return fileDescriptor_25d37d3dc0bc109b, []int{92}
-}
-
-func (m *CreateEbookRequest) XXX_Unmarshal(b []byte) error {
-	return xxx_messageInfo_CreateEbookRequest.Unmarshal(m, b)
-}
-func (m *CreateEbookRequest) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	return xxx_messageInfo_CreateEbookRequest.Marshal(b, m, deterministic)
-}
-func (m *CreateEbookRequest) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CreateEbookRequest.Merge(m, src)
-}
-func (m *CreateEbookRequest) XXX_Size() int {
-	return xxx_messageInfo_CreateEbookRequest.Size(m)
-}
-func (m *CreateEbookRequest) XXX_DiscardUnknown() {
-	xxx_messageInfo_CreateEbookRequest.DiscardUnknown(m)
-}
-
-var xxx_messageInfo_CreateEbookRequest proto.InternalMessageInfo
-
-func (m *CreateEbookRequest) GetToken() string {
-	if m != nil {
-		return m.Token
-	}
-	return ""
-}
-
-func (m *CreateEbookRequest) GetYear() string {
-	if m != nil {
-		return m.Year
-	}
-	return ""
-}
-
-func (m *CreateEbookRequest) GetClass() string {
-	if m != nil {
-		return m.Class
-	}
-	return ""
-}
-
-func (m *CreateEbookRequest) GetName() string {
-	if m != nil {
-		return m.Name
-	}
-	return ""
-}
-
-type CreateEbookResponse struct {
-	XXX_NoUnkeyedLiteral struct{} `json:"-"`
-	XXX_unrecognized     []byte   `json:"-"`
-	XXX_sizecache        int32    `json:"-"`
-}
-
-func (m *CreateEbookResponse) Reset()         { *m = CreateEbookResponse{} }
-func (m *CreateEbookResponse) String() string { return proto.CompactTextString(m) }
-func (*CreateEbookResponse) ProtoMessage()    {}
-func (*CreateEbookResponse) Descriptor() ([]byte, []int) {
-	return fileDescriptor_25d37d3dc0bc109b, []int{93}
-}
-
-func (m *CreateEbookResponse) XXX_Unmarshal(b []byte) error {
-	return xxx_messageInfo_CreateEbookResponse.Unmarshal(m, b)
-}
-func (m *CreateEbookResponse) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	return xxx_messageInfo_CreateEbookResponse.Marshal(b, m, deterministic)
-}
-func (m *CreateEbookResponse) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_CreateEbookResponse.Merge(m, src)
-}
-func (m *CreateEbookResponse) XXX_Size() int {
-	return xxx_messageInfo_CreateEbookResponse.Size(m)
-}
-func (m *CreateEbookResponse) XXX_DiscardUnknown() {
-	xxx_messageInfo_CreateEbookResponse.DiscardUnknown(m)
-}
-
-var xxx_messageInfo_CreateEbookResponse proto.InternalMessageInfo
-
 type Ebook struct {
 	Year                 string   `protobuf:"bytes,1,opt,name=year,proto3" json:"year"`
 	Class                string   `protobuf:"bytes,2,opt,name=class,proto3" json:"class"`
@@ -5234,7 +5140,7 @@ func (m *Ebook) Reset()         { *m = Ebook{} }
 func (m *Ebook) String() string { return proto.CompactTextString(m) }
 func (*Ebook) ProtoMessage()    {}
 func (*Ebook) Descriptor() ([]byte, []int) {
-	return fileDescriptor_25d37d3dc0bc109b, []int{94}
+	return fileDescriptor_25d37d3dc0bc109b, []int{92}
 }
 
 func (m *Ebook) XXX_Unmarshal(b []byte) error {
@@ -5376,8 +5282,6 @@ func init() {
 	proto.RegisterType((*GetEbooksResponse)(nil), "dongfeng.protobuf.GetEbooksResponse")
 	proto.RegisterType((*UpdateEbookRequest)(nil), "dongfeng.protobuf.UpdateEbookRequest")
 	proto.RegisterType((*UpdateEbookResponse)(nil), "dongfeng.protobuf.UpdateEbookResponse")
-	proto.RegisterType((*CreateEbookRequest)(nil), "dongfeng.protobuf.CreateEbookRequest")
-	proto.RegisterType((*CreateEbookResponse)(nil), "dongfeng.protobuf.CreateEbookResponse")
 	proto.RegisterType((*Ebook)(nil), "dongfeng.protobuf.Ebook")
 }
 
@@ -5386,7 +5290,7 @@ func init() {
 }
 
 var fileDescriptor_25d37d3dc0bc109b = []byte{
-	// 2738 bytes of a gzipped FileDescriptorProto
+	// 2725 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x5a, 0x6f, 0x6f, 0x1b, 0xc7,
 	0xd1, 0xc7, 0xf1, 0x3f, 0x87, 0x96, 0x2c, 0x5d, 0x64, 0xea, 0x6c, 0xc5, 0x89, 0xb2, 0xc9, 0xf3,
 	0x54, 0x6d, 0x1a, 0x47, 0xa2, 0x9a, 0xc4, 0x06, 0x8a, 0xa6, 0xb1, 0xe4, 0x2a, 0x0e, 0x62, 0x5b,
@@ -5554,9 +5458,8 @@ var fileDescriptor_25d37d3dc0bc109b = []byte{
 	0x24, 0xdf, 0xc5, 0x05, 0x22, 0x4b, 0xbe, 0x8b, 0xa3, 0x4a, 0x57, 0xc9, 0xb1, 0xbf, 0x58, 0xfa,
 	0x37, 0x10, 0xe1, 0x2f, 0xcf, 0xe3, 0xdc, 0x1d, 0xa2, 0x0d, 0x35, 0x6f, 0xc2, 0x87, 0xe6, 0x1b,
 	0x96, 0xea, 0xe1, 0xd5, 0x38, 0x9e, 0x8c, 0xf5, 0x9f, 0x44, 0x64, 0x5b, 0x5e, 0xa0, 0xfb, 0x51,
-	0x84, 0x17, 0x8d, 0x66, 0x57, 0x36, 0x93, 0xcf, 0xee, 0xca, 0xf7, 0x24, 0x51, 0x0f, 0xf0, 0x4d,
-	0xff, 0x65, 0x2f, 0x49, 0x3a, 0x90, 0x99, 0x49, 0x39, 0xf0, 0x0b, 0xa8, 0x22, 0x90, 0xfb, 0x11,
-	0x30, 0xff, 0x93, 0xd0, 0x39, 0x9f, 0x98, 0xe5, 0xe2, 0xe4, 0x46, 0x8b, 0xd7, 0x61, 0xec, 0xf4,
-	0x6a, 0x18, 0xc9, 0xfd, 0xff, 0x06, 0x00, 0x00, 0xff, 0xff, 0xb3, 0xfc, 0x28, 0xcf, 0x74, 0x27,
-	0x00, 0x00,
+	0x84, 0x17, 0x8d, 0x66, 0x57, 0x36, 0x93, 0xcf, 0xee, 0xca, 0x77, 0x95, 0xa8, 0xbf, 0x80, 0x2a,
+	0x02, 0xb9, 0xdf, 0xe0, 0xf2, 0xbf, 0xc8, 0x9c, 0xf3, 0x85, 0x57, 0xda, 0x96, 0xfb, 0x1c, 0xde,
+	0x46, 0xb1, 0xd3, 0xab, 0x21, 0x91, 0xfb, 0xff, 0x0d, 0x00, 0x00, 0xff, 0xff, 0xaf, 0x7f, 0xf7,
+	0x42, 0xf3, 0x26, 0x00, 0x00,
 }

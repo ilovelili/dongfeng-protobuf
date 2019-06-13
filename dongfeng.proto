@@ -574,16 +574,6 @@ message UpdateEbookRequest {
 message UpdateEbookResponse {
 }
 
-message CreateEbookRequest {
-	string token = 1;
-	string year = 2;
-	string class = 3;
-	string name = 4;
-}
-
-message CreateEbookResponse {
-}
-
 message Ebook {
 	string year = 1;
 	string class = 2;
