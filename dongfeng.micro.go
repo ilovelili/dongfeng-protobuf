@@ -100,6 +100,8 @@ It has these top-level messages:
 	GetEbooksResponse
 	UpdateEbookRequest
 	UpdateEbookResponse
+	CreateEbookRequest
+	CreateEbookResponse
 	Ebook
 */
 package dongfeng_protobuf

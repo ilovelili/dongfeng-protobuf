@@ -553,7 +553,7 @@ message GetEbooksRequest {
 	string token = 1;
 	string year = 2;
 	string class = 3;
-	string name = 4;	
+	string name = 4;
 }
 
 message GetEbooksResponse {
@@ -574,7 +574,17 @@ message UpdateEbookRequest {
 message UpdateEbookResponse {
 }
 
-message Ebook {	
+message CreateEbookRequest {
+	string token = 1;
+	string year = 2;
+	string class = 3;
+	string name = 4;
+}
+
+message CreateEbookResponse {
+}
+
+message Ebook {
 	string year = 1;
 	string class = 2;
 	string name = 3;
