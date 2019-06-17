@@ -43,9 +43,6 @@ It has these top-level messages:
 	UpdateAttendanceResponse
 	Attendance
 	Holiday
-	CountAttendanceRequest
-	CountAttendanceResponse
-	AttendanceCount
 	UpdatePhysiqueRequest
 	UpdatePhysiqueResponse
 	Physique
@@ -85,6 +82,8 @@ It has these top-level messages:
 	Ingredient
 	GetProcurementRequest
 	GetProcurementResponse
+	UpdateProcurementRequest
+	UpdateProcurementResponse
 	Procurement
 	IngredientAmount
 	GetProfileRequest

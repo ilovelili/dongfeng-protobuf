@@ -192,27 +192,6 @@ message Holiday {
 	int64 type = 2; // 0: working day | 1: weekend | 2: holiday
 }
 
-///////////////////////////////////////////////////
-message CountAttendanceRequest {
-	string from = 1;
-	string to = 2;
-	string class = 3;
-}
-
-message CountAttendanceResponse {
-	int64 sum = 1;
-	int64 junior_sum = 2;
-	int64 middle_sum = 3;
-	int64 senior_sum = 4;
-	repeated AttendanceCount attendance_counts = 5;
-}
-
-message AttendanceCount {
-	string date = 1;
-	string class = 2;
-	int64 count = 3;
-}
-
 // ******************************************************* physique message definition *******************************************************
 ///////////////////////////////////////////////////
 message UpdatePhysiqueRequest {
@@ -473,22 +452,30 @@ message GetProcurementRequest {
 	string token = 1;
 	string from = 2;
 	string to = 3;
-	int64 meal_id = 4;
 }
 
 message GetProcurementResponse {
 	repeated Procurement procurements = 1;
 }
 
+message UpdateProcurementRequest {
+	string token = 1;
+	Procurement procurement = 2;
+}
+
+message UpdateProcurementResponse {
+}
+
 message Procurement {
 	string date = 1;
 	int64 attendance = 2;
-	repeated IngredientAmount procurement = 3;
+	repeated IngredientAmount procurements = 3;
 }
 
 message IngredientAmount {
 	string ingredient = 1;
 	double amount = 2;
+	bool matched = 3;
 }
 
 // ******************************************************* growth profile message definition *******************************************************
