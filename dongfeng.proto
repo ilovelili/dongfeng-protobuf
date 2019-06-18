@@ -460,7 +460,8 @@ message GetProcurementResponse {
 
 message UpdateProcurementRequest {
 	string token = 1;
-	Procurement procurement = 2;
+	int64 id = 2;
+	double amount = 3;
 }
 
 message UpdateProcurementResponse {
@@ -473,9 +474,10 @@ message Procurement {
 }
 
 message IngredientAmount {
-	string ingredient = 1;
-	double amount = 2;
-	bool matched = 3;
+	int64 id = 1;
+	string recipe = 2;
+	string ingredient = 3;
+	double amount = 4;
 }
 
 // ******************************************************* growth profile message definition *******************************************************
