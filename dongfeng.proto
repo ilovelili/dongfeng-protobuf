@@ -24,13 +24,12 @@ message LoginResponse {
 }
 
 message User {
-	bool newuser = 1;
-	string role = 2;
-	string id = 3;
-	string email = 4;
-	string name = 5;
-	string avatar = 6;
-	repeated Setting settings = 7;
+	bool newuser = 1;	
+	string id = 2;
+	string email = 3;
+	string name = 4;
+	string avatar = 5;
+	repeated Setting settings = 6;
 }
 
 ///////////////////////////////////////////////////
