@@ -6,7 +6,7 @@ package dongfeng.protobuf;
 
 ///////////////////////////////////////////////////
 message DashboardRequest {
-	string token = 1;
+	string pid = 1;
 }
 
 message DashboardResponse {
@@ -16,7 +16,7 @@ message DashboardResponse {
 
 ///////////////////////////////////////////////////
 message LoginRequest {
-	string token = 1;
+	string pid = 1;
 }
 
 message LoginResponse {
@@ -47,7 +47,7 @@ message Setting {
 
 ///////////////////////////////////////////////////
 message UpdateNotificationsRequest {
-	string token = 1;
+	string pid = 1;
 	repeated int64 notifications = 2;
 }
 
@@ -73,7 +73,7 @@ message Notification {
 
 ///////////////////////////////////////////////////
 message UpdateUserRequest {
-	string token = 1;
+	string pid = 1;
 	string name = 2;
 	string avatar = 3;
 }
@@ -83,7 +83,7 @@ message UpdateUserResponse {}
 
 ///////////////////////////////////////////////////
 message GetClassRequest {
-	string token = 1;
+	string pid = 1;
 }
 
 message GetClassResponse {
@@ -91,7 +91,7 @@ message GetClassResponse {
 }
 
 message UpdateClassRequest {
-	string token = 1;
+	string pid = 1;
 	repeated Class classes = 2;
 }
 
@@ -105,7 +105,7 @@ message Class {
 
 ///////////////////////////////////////////////////
 message GetPupilRequest {
-	string token = 1;
+	string pid = 1;
 	string year = 2;
 	string class = 3;
 }
@@ -115,7 +115,7 @@ message GetPupilResponse {
 }
 
 message UpdatePupilRequest {
-	string token = 1;
+	string pid = 1;
 	repeated Pupil pupils = 2;
 }
 
@@ -131,7 +131,7 @@ message Pupil {
 
 ///////////////////////////////////////////////////
 message GetTeacherRequest {
-	string token = 1;
+	string pid = 1;
 	string year = 2;
 	string class = 3;
 }
@@ -141,7 +141,7 @@ message GetTeacherResponse {
 }
 
 message UpdateTeacherRequest {
-	string token = 1;
+	string pid = 1;
 	repeated Teacher teachers = 2;
 }
 
@@ -159,7 +159,7 @@ message Teacher {
 
 ///////////////////////////////////////////////////
 message GetAttendanceRequest {
-	string token = 1;
+	string pid = 1;
 	string year = 2;
 	string from = 3;
 	string to = 4;
@@ -173,7 +173,7 @@ message GetAttendanceResponse {
 }
 
 message UpdateAttendanceRequest {
-	string token = 1;
+	string pid = 1;
 	repeated Attendance attendances = 2;
 }
 
@@ -195,7 +195,7 @@ message Holiday {
 // ******************************************************* physique message definition *******************************************************
 ///////////////////////////////////////////////////
 message UpdatePhysiqueRequest {
-	string token = 1;
+	string pid = 1;
 	repeated Physique physiques = 2;
 }
 
@@ -226,7 +226,7 @@ message Physique {
 
 ///////////////////////////////////////////////////
 message GetPhysiqueRequest {
-	string token = 1;
+	string pid = 1;
 	string year = 2;
 	string class = 3;
 	string name = 4;
@@ -237,7 +237,7 @@ message GetPhysiqueResponse {
 }
 
 message GetAgeHeightWeightPMasterRequest {
-	string token = 1;
+	string pid = 1;
 }
 
 message GetAgeHeightWeightPMasterResponse {
@@ -259,7 +259,7 @@ message AgeHeightWeightPMaster {
 }
 
 message GetAgeHeightWeightSDMasterRequest {
-	string token = 1;
+	string pid = 1;
 }
 
 message GetAgeHeightWeightSDMasterResponse {
@@ -279,7 +279,7 @@ message AgeHeightWeightSDMaster {
 }
 
 message GetBMIMasterRequest {
-	string token = 1;
+	string pid = 1;
 }
 
 message GetBMIMasterResponse {
@@ -297,7 +297,7 @@ message BMIMaster {
 }
 
 message GetHeightToWeightPMasterRequest {
-	string token = 1;
+	string pid = 1;
 }
 
 message GetHeightToWeightPMasterResponse {
@@ -317,7 +317,7 @@ message HeightToWeightPMaster {
 }
 
 message GetHeightToWeightSDMasterRequest {
-	string token = 1;
+	string pid = 1;
 }
 
 message GetHeightToWeightSDMasterResponse {
@@ -340,7 +340,7 @@ message HeightToWeightSDMaster {
 // ******************************************************* nutrition message definition *******************************************************
 ///////////////////////////////////////////////////
 message GetMenuRequest {
-	string token = 1;
+	string pid = 1;
 	string from = 2;
 	string to = 3;
 	int64 junior_or_senior = 4;
@@ -367,7 +367,7 @@ message Menu {
 
 ///////////////////////////////////////////////////
 message GetRecipeRequest {
-	string token = 1;
+	string pid = 1;
 	repeated string names = 2;
 }
 
@@ -376,7 +376,7 @@ message GetRecipeResponse {
 }
 
 message UpdateRecipeRequest {
-	string token = 1;
+	string pid = 1;
 	repeated Recipe recipes = 2;
 }
 
@@ -395,7 +395,7 @@ message Recipe {
 
 ///////////////////////////////////////////////////
 message GetIngredientRequest {
-	string token = 1;
+	string pid = 1;
 	repeated string ingredients = 2;
 }
 
@@ -412,7 +412,7 @@ message GetIngredientNameResponse {
 }
 
 message UpdateIngredientRequest {
-	string token = 1;
+	string pid = 1;
 	repeated Ingredient ingredients = 2;
 }
 
@@ -449,7 +449,7 @@ message Ingredient {
 
 ///////////////////////////////////////////////////
 message GetProcurementRequest {
-	string token = 1;
+	string pid = 1;
 	string from = 2;
 	string to = 3;
 }
@@ -459,7 +459,7 @@ message GetProcurementResponse {
 }
 
 message UpdateProcurementRequest {
-	string token = 1;
+	string pid = 1;
 	int64 id = 2;
 	double amount = 3;
 }
@@ -482,7 +482,7 @@ message IngredientAmount {
 
 // ******************************************************* growth profile message definition *******************************************************
 message GetProfileRequest {
-	string token = 1;
+	string pid = 1;
 	int64 id = 2;
 	string year = 3;
 	string class = 4;
@@ -495,7 +495,7 @@ message GetProfileResponse {
 }
 
 message GetPrevOrNextProfileRequest {
-	string token = 1;
+	string pid = 1;
 	string year = 2;
 	string class = 3;
 	string date = 4;
@@ -507,7 +507,7 @@ message GetPrevOrNextProfileResponse {
 }
 
 message UpdateProfileRequest {
-	string token = 1;
+	string pid = 1;
 	string year = 2;
 	string class = 3;
 	string date = 4;
@@ -519,7 +519,7 @@ message UpdateProfileRequest {
 message UpdateProfileResponse {}
 
 message GetProfilesRequest {
-	string token = 1;
+	string pid = 1;
 	string year = 2;
 	string class = 3;
 	string name = 4;
@@ -539,7 +539,7 @@ message Profile {
 
 ///////////////////////////////////////////////////
 message GetEbooksRequest {
-	string token = 1;
+	string pid = 1;
 	string year = 2;
 	string class = 3;
 	string name = 4;
@@ -550,7 +550,7 @@ message GetEbooksResponse {
 }
 
 message UpdateEbookRequest {
-	string token = 1;
+	string pid = 1;
 	string year = 2;
 	string class = 3;
 	string name = 4;
