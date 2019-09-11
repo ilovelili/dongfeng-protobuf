@@ -1,4 +1,4 @@
-module github/ilovelili/dongfeng-protobuf
+module github.com/ilovelili/dongfeng-protobuf
 
 go 1.12
 
