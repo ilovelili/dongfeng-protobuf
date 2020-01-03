@@ -568,3 +568,11 @@ message Ebook {
 	string name = 3;
 	repeated string dates = 4;
 }
+
+message GetAccessiblePathsRequest {
+	string pid = 1;	
+}
+
+message GetAccessiblePathsResponse {
+	repeated string paths = 1;
+}
