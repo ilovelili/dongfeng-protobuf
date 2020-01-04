@@ -574,5 +574,10 @@ message GetAccessiblePathsRequest {
 }
 
 message GetAccessiblePathsResponse {
-	repeated string paths = 1;
+	repeated AccessiblePath accessible_paths = 1;
+}
+
+message AccessiblePath {
+	string path = 1;
+	string method = 2;
 }
