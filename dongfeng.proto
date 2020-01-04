@@ -569,15 +569,10 @@ message Ebook {
 	repeated string dates = 4;
 }
 
-message GetAccessiblePathsRequest {
+message GetRoleRequest {
 	string pid = 1;	
 }
 
-message GetAccessiblePathsResponse {
-	repeated AccessiblePath accessible_paths = 1;
-}
-
-message AccessiblePath {
-	string path = 1;
-	string method = 2;
+message GetRoleResponse {
+	string role = 1;
 }
