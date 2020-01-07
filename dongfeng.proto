@@ -576,3 +576,17 @@ message GetRoleRequest {
 message GetRoleResponse {
 	string role = 1;
 }
+
+message GetGrowthProfileTemplatesRequest {
+	string pid = 1;	
+}
+
+message GetGrowthProfileTemplatesResponse {
+	repeated GrowthProfileTemplate templates = 1;
+}
+
+message GrowthProfileTemplate {
+	int64 id = 1;
+	string name = 2;
+	string creator = 3;
+}
