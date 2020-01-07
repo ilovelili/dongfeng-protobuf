@@ -588,5 +588,5 @@ message GetGrowthProfileTemplatesResponse {
 message GrowthProfileTemplate {
 	int64 id = 1;
 	string name = 2;
-	string creator = 3;
+	string created_by = 3;
 }
