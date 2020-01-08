@@ -544,12 +544,13 @@ message GetProfileTemplatesResponse {
 	repeated ProfileTemplate templates = 1;
 }
 
-message CreateProfileTemplateRequest {
+message UpdateProfileTemplateRequest {
 	string pid = 1;	
-	string name = 2;	
+	string name = 2;
+	bool enabled = 3;
 }
 
-message CreateProfileTemplateResponse {	
+message UpdateProfileTemplateResponse {	
 }
 
 message ProfileTemplate {
