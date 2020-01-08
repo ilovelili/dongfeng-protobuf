@@ -536,6 +536,20 @@ message Profile {
 	string name = 5;
 }
 
+message GetProfileTemplatesRequest {
+	string pid = 1;	
+}
+
+message GetProfileTemplatesResponse {
+	repeated ProfileTemplate templates = 1;
+}
+
+message ProfileTemplate {
+	int64 id = 1;
+	string name = 2;
+	string created_by = 3;
+}
+
 ///////////////////////////////////////////////////
 message GetEbooksRequest {
 	string pid = 1;
@@ -575,18 +589,4 @@ message GetRoleRequest {
 
 message GetRoleResponse {
 	string role = 1;
-}
-
-message GetGrowthProfileTemplatesRequest {
-	string pid = 1;	
-}
-
-message GetGrowthProfileTemplatesResponse {
-	repeated GrowthProfileTemplate templates = 1;
-}
-
-message GrowthProfileTemplate {
-	int64 id = 1;
-	string name = 2;
-	string created_by = 3;
 }
