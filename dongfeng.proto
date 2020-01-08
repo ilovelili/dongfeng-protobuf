@@ -544,6 +544,14 @@ message GetProfileTemplatesResponse {
 	repeated ProfileTemplate templates = 1;
 }
 
+message CreateProfileTemplateRequest {
+	string pid = 1;	
+	string name = 2;	
+}
+
+message CreateProfileTemplateResponse {	
+}
+
 message ProfileTemplate {
 	int64 id = 1;
 	string name = 2;
