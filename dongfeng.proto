@@ -536,6 +536,15 @@ message Profile {
 	string name = 5;
 }
 
+message GetProfileTemplateRequest {
+	string pid = 1;	
+	int64 id = 2;
+}
+
+message GetProfileTemplateResponse {
+	ProfileTemplate template = 1;
+}
+
 message GetProfileTemplatesRequest {
 	string pid = 1;	
 }
