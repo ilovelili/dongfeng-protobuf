@@ -551,6 +551,7 @@ message UpdateProfileTemplateRequest {
 }
 
 message UpdateProfileTemplateResponse {	
+	int64 id = 1;
 }
 
 message ProfileTemplate {
