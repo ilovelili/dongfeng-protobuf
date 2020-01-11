@@ -556,7 +556,8 @@ message GetProfileTemplatesResponse {
 message UpdateProfileTemplateRequest {
 	string pid = 1;	
 	string name = 2;
-	bool enabled = 3;
+	string profile = 3;
+	bool enabled = 4;
 }
 
 message UpdateProfileTemplateResponse {
