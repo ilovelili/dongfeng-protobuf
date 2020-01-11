@@ -542,7 +542,7 @@ message GetProfileTemplateRequest {
 }
 
 message GetProfileTemplateResponse {
-	ProfileTemplate template = 1;
+	string profile = 1;
 }
 
 message GetProfileTemplatesRequest {
