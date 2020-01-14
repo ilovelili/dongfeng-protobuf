@@ -511,8 +511,9 @@ message UpdateProfileRequest {
 	string class = 3;
 	string date = 4;
 	string name = 5;
-	string profile = 6;
-	bool enabled = 7;
+	string template_name = 6;
+	string profile = 7;
+	bool enabled = 8;
 }
 
 message UpdateProfileResponse {}
