@@ -7,6 +7,7 @@ package dongfeng.protobuf;
 ///////////////////////////////////////////////////
 message DashboardRequest {
 	string pid = 1;
+	string email = 2;
 }
 
 message DashboardResponse {
@@ -17,6 +18,7 @@ message DashboardResponse {
 ///////////////////////////////////////////////////
 message LoginRequest {
 	string pid = 1;
+	string email = 2;
 }
 
 message LoginResponse {
@@ -47,7 +49,8 @@ message Setting {
 ///////////////////////////////////////////////////
 message UpdateNotificationsRequest {
 	string pid = 1;
-	repeated int64 notifications = 2;
+	string email = 2;
+	repeated int64 notifications = 3;
 }
 
 message UpdateNotificationsResponse { }
@@ -73,8 +76,9 @@ message Notification {
 ///////////////////////////////////////////////////
 message UpdateUserRequest {
 	string pid = 1;
-	string name = 2;
-	string avatar = 3;
+	string email = 2;
+	string name = 3;
+	string avatar = 4;
 }
 
 message UpdateUserResponse {}
@@ -83,6 +87,7 @@ message UpdateUserResponse {}
 ///////////////////////////////////////////////////
 message GetClassRequest {
 	string pid = 1;
+	string email = 2;
 }
 
 message GetClassResponse {
@@ -91,22 +96,25 @@ message GetClassResponse {
 
 message UpdateClassRequest {
 	string pid = 1;
-	repeated Class classes = 2;
+	string email = 2;
+	repeated Class classes = 3;
 }
 
 message UpdateClassResponse {}
 
 message Class {
 	int64 id = 1;
-	string name = 2;
-	string created_by = 3;
+	string email = 2;
+	string name = 3;
+	string created_by = 4;
 }
 
 ///////////////////////////////////////////////////
 message GetPupilRequest {
 	string pid = 1;
-	string year = 2;
-	string class = 3;
+	string email = 2;
+	string year = 3;
+	string class = 4;
 }
 
 message GetPupilResponse {
@@ -115,7 +123,8 @@ message GetPupilResponse {
 
 message UpdatePupilRequest {
 	string pid = 1;
-	repeated Pupil pupils = 2;
+	string email = 2;
+	repeated Pupil pupils = 3;
 }
 
 message UpdatePupilResponse {}
@@ -131,8 +140,9 @@ message Pupil {
 ///////////////////////////////////////////////////
 message GetTeacherRequest {
 	string pid = 1;
-	string year = 2;
-	string class = 3;
+	string email = 2;
+	string year = 3;
+	string class = 4;
 }
 
 message GetTeacherResponse {
@@ -141,7 +151,8 @@ message GetTeacherResponse {
 
 message UpdateTeacherRequest {
 	string pid = 1;
-	repeated Teacher teachers = 2;
+	string email = 2;
+	repeated Teacher teachers = 3;
 }
 
 message UpdateTeacherResponse {}
@@ -159,11 +170,12 @@ message Teacher {
 ///////////////////////////////////////////////////
 message GetAttendanceRequest {
 	string pid = 1;
-	string year = 2;
-	string from = 3;
-	string to = 4;
-	string class = 5;
-	string name = 6;
+	string email = 2;
+	string year = 3;
+	string from = 4;
+	string to = 5;
+	string class = 6;
+	string name = 7;
 }
 
 message GetAttendanceResponse {
@@ -173,7 +185,8 @@ message GetAttendanceResponse {
 
 message UpdateAttendanceRequest {
 	string pid = 1;
-	repeated Attendance attendances = 2;
+	string email = 2;
+	repeated Attendance attendances = 3;
 }
 
 message UpdateAttendanceResponse {}
@@ -195,7 +208,8 @@ message Holiday {
 ///////////////////////////////////////////////////
 message UpdatePhysiqueRequest {
 	string pid = 1;
-	repeated Physique physiques = 2;
+	string email = 2;
+	repeated Physique physiques = 3;
 }
 
 message UpdatePhysiqueResponse {}
@@ -226,9 +240,10 @@ message Physique {
 ///////////////////////////////////////////////////
 message GetPhysiqueRequest {
 	string pid = 1;
-	string year = 2;
-	string class = 3;
-	string name = 4;
+	string email = 2;
+	string year = 3;
+	string class = 4;
+	string name = 5;
 }
 
 message GetPhysiqueResponse {
@@ -237,6 +252,7 @@ message GetPhysiqueResponse {
 
 message GetAgeHeightWeightPMasterRequest {
 	string pid = 1;
+	string email = 2;
 }
 
 message GetAgeHeightWeightPMasterResponse {
@@ -259,6 +275,7 @@ message AgeHeightWeightPMaster {
 
 message GetAgeHeightWeightSDMasterRequest {
 	string pid = 1;
+	string email = 2;
 }
 
 message GetAgeHeightWeightSDMasterResponse {
@@ -279,6 +296,7 @@ message AgeHeightWeightSDMaster {
 
 message GetBMIMasterRequest {
 	string pid = 1;
+	string email = 2;
 }
 
 message GetBMIMasterResponse {
@@ -297,6 +315,7 @@ message BMIMaster {
 
 message GetHeightToWeightPMasterRequest {
 	string pid = 1;
+	string email = 2;
 }
 
 message GetHeightToWeightPMasterResponse {
@@ -317,6 +336,7 @@ message HeightToWeightPMaster {
 
 message GetHeightToWeightSDMasterRequest {
 	string pid = 1;
+	string email = 2;
 }
 
 message GetHeightToWeightSDMasterResponse {
@@ -340,10 +360,11 @@ message HeightToWeightSDMaster {
 ///////////////////////////////////////////////////
 message GetMenuRequest {
 	string pid = 1;
-	string from = 2;
-	string to = 3;
-	int64 junior_or_senior = 4;
-	int64 breakfast_or_lunch = 5;
+	string email = 2;
+	string from = 3;
+	string to = 4;
+	int64 junior_or_senior = 5;
+	int64 breakfast_or_lunch = 6;
 }
 
 message GetMenuResponse {
@@ -367,7 +388,8 @@ message Menu {
 ///////////////////////////////////////////////////
 message GetRecipeRequest {
 	string pid = 1;
-	repeated string names = 2;
+	string email = 2;
+	repeated string names = 3;
 }
 
 message GetRecipeResponse {
@@ -376,7 +398,8 @@ message GetRecipeResponse {
 
 message UpdateRecipeRequest {
 	string pid = 1;
-	repeated Recipe recipes = 2;
+	string email = 2;
+	repeated Recipe recipes = 3;
 }
 
 message UpdateRecipeResponse {
@@ -395,7 +418,8 @@ message Recipe {
 ///////////////////////////////////////////////////
 message GetIngredientRequest {
 	string pid = 1;
-	repeated string ingredients = 2;
+	string email = 2;
+	repeated string ingredients = 3;
 }
 
 message GetIngredientResponse {
@@ -412,7 +436,8 @@ message GetIngredientNameResponse {
 
 message UpdateIngredientRequest {
 	string pid = 1;
-	repeated Ingredient ingredients = 2;
+	string email = 2;
+	repeated Ingredient ingredients = 3;
 }
 
 message UpdateIngredientResponse {
@@ -449,8 +474,9 @@ message Ingredient {
 ///////////////////////////////////////////////////
 message GetProcurementRequest {
 	string pid = 1;
-	string from = 2;
-	string to = 3;
+	string email = 2;
+	string from = 3;
+	string to = 4;
 }
 
 message GetProcurementResponse {
@@ -459,8 +485,9 @@ message GetProcurementResponse {
 
 message UpdateProcurementRequest {
 	string pid = 1;
-	int64 id = 2;
-	double amount = 3;
+	string email = 2;
+	int64 id = 3;
+	double amount = 4;
 }
 
 message UpdateProcurementResponse {
@@ -482,11 +509,12 @@ message IngredientAmount {
 // ******************************************************* growth profile message definition *******************************************************
 message GetProfileRequest {
 	string pid = 1;
-	int64 id = 2;
-	string year = 3;
-	string class = 4;
-	string date = 5;
-	string name = 6;
+	string email = 2;
+	int64 id = 3;
+	string year = 4;
+	string class = 5;
+	string date = 6;
+	string name = 7;
 }
 
 message GetProfileResponse {
@@ -495,10 +523,11 @@ message GetProfileResponse {
 
 message GetPrevOrNextProfileRequest {
 	string pid = 1;
-	string year = 2;
-	string class = 3;
-	string date = 4;
-	string name = 5;
+	string email = 2;
+	string year = 3;
+	string class = 4;
+	string date = 5;
+	string name = 6;
 }
 
 message GetPrevOrNextProfileResponse {
@@ -507,22 +536,24 @@ message GetPrevOrNextProfileResponse {
 
 message UpdateProfileRequest {
 	string pid = 1;
-	string year = 2;
-	string class = 3;
-	string date = 4;
-	string name = 5;
-	string template_name = 6;
-	string profile = 7;
-	bool enabled = 8;
+	string email = 2;
+	string year = 3;
+	string class = 4;
+	string date = 5;
+	string name = 6;
+	string template_name = 7;
+	string profile = 8;
+	bool enabled = 9;
 }
 
 message UpdateProfileResponse {}
 
 message GetProfilesRequest {
 	string pid = 1;
-	string year = 2;
-	string class = 3;
-	string name = 4;
+	string email = 2;
+	string year = 3;
+	string class = 4;
+	string name = 5;
 }
 
 message GetProfilesResponse {
@@ -531,15 +562,17 @@ message GetProfilesResponse {
 
 message Profile {
 	int64 id = 1;
-	string year = 2;
-	string class = 3;
-	string date = 4;
-	string name = 5;
+	string email = 2;
+	string year = 3;
+	string class = 4;
+	string date = 5;
+	string name = 6;
 }
 
 message GetProfileTemplateRequest {
-	string pid = 1;	
-	string name = 2;
+	string pid = 1;
+	string email = 2;	
+	string name = 3;
 }
 
 message GetProfileTemplateResponse {
@@ -547,7 +580,8 @@ message GetProfileTemplateResponse {
 }
 
 message GetProfileTemplatesRequest {
-	string pid = 1;	
+	string pid = 1;
+	string email = 2;	
 }
 
 message GetProfileTemplatesResponse {
@@ -555,10 +589,11 @@ message GetProfileTemplatesResponse {
 }
 
 message UpdateProfileTemplateRequest {
-	string pid = 1;	
-	string name = 2;
-	string profile = 3;
-	bool enabled = 4;
+	string pid = 1;
+	string email = 2;
+	string name = 3;
+	string profile = 4;
+	bool enabled = 5;
 }
 
 message UpdateProfileTemplateResponse {
@@ -572,9 +607,10 @@ message ProfileTemplate {
 ///////////////////////////////////////////////////
 message GetEbooksRequest {
 	string pid = 1;
-	string year = 2;
-	string class = 3;
-	string name = 4;
+	string email = 2;
+	string year = 3;
+	string class = 4;
+	string name = 5;
 }
 
 message GetEbooksResponse {
@@ -583,13 +619,14 @@ message GetEbooksResponse {
 
 message UpdateEbookRequest {
 	string pid = 1;
-	string year = 2;
-	string class = 3;
-	string name = 4;
-	string date = 5;
-	repeated string images = 6;
-	string html = 7;
-	string css = 8;
+	string email = 2;
+	string year = 3;
+	string class = 4;
+	string name = 5;
+	string date = 6;
+	repeated string images = 7;
+	string html = 8;
+	string css = 9;
 }
 
 message UpdateEbookResponse {
@@ -603,7 +640,8 @@ message Ebook {
 }
 
 message GetRoleRequest {
-	string pid = 1;	
+	string pid = 1;
+	string email = 2;
 }
 
 message GetRoleResponse {
